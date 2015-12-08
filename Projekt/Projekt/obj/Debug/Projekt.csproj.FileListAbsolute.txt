@@ -1,0 +1,2 @@
+c:\users\simon\documents\visual studio 2015\Projects\Projekt\Projekt\bin\Debug\Projekt.exe.config
+c:\users\simon\documents\visual studio 2015\Projects\Projekt\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache
