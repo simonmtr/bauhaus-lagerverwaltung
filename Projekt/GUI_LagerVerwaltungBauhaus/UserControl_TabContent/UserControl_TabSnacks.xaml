@@ -1,0 +1,31 @@
+﻿<UserControl x:Name="UserControl_TabSnacks1" x:Class="GUI_LagerVerwaltungBauhaus.UserControl_TabSnacks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GUI_LagerVerwaltungBauhaus"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="18.667" Background="#FFCC0001">
+   
+    <Grid x:Name="Snacks_Grid">
+        
+        <DataGrid x:Name="snacks_DataGrid" Background="White" BorderBrush="#FFCC0001" Margin="10,10,10,80">
+            
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="DataGridTextColumn_Snack" Header="Snacks"  FontFamily="Tekton Pro" FontSize="18.667" />
+                <DataGridTextColumn x:Name="DataGridTextColumn_Taste" Header="Geschmack"  FontFamily="Tekton Pro" FontSize="18.667" />
+                <DataGridTextColumn x:Name="DataGridTextColumn_Brand" Header="Marke"  FontFamily="Tekton Pro" FontSize="18.667"/>
+                <DataGridTextColumn x:Name="DataGridTextColumn_Stock" Header="Bestand"  FontFamily="Tekton Pro" FontSize="18.667"/>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+
+        <Grid x:Name="Snacks_Button_Grid" Margin="0,415,0,0">
+            <Button x:Name="button_Snacks_Sweet" Content="Süß" FontFamily="Tekton Pro" FontSize="18.667" Background="White" BorderBrush="#FFCC0001" Height="35" Width="150" Margin="250,25,500,25"/>
+            <Button x:Name="button_Snacks_Salt" Content="Salzig" FontFamily="Tekton Pro" FontSize="18.667" Background="White" BorderBrush="#FFCC0001" Height="35" Width="150" Margin="55,25,695,25" />
+
+        </Grid>
+    
+    </Grid>
+
+</UserControl>

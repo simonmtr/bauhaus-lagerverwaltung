@@ -1,0 +1,54 @@
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.exe.config
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.exe
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.pdb
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\MainWindow.g.cs
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\App.g.cs
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus_MarkupCompile.cache
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus_MarkupCompile.lref
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\MainWindow.baml
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.g.resources
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.Properties.Resources.resources
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.csproj.GenerateResource.Cache
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.exe
+d:\documents\visual studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.pdb
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabSnacks.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabWelcome.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabWelcome.baml
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabSnacks.baml
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabAdd.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabDrinks.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabRemove.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabAdd.baml
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabDrinks.baml
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabRemove.baml
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_PopUp\UserControl_PopUp.g.cs
+D:\Documents\Visual Studio 2015\Projects\GUI_LagerVerwaltungBauhaus\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_PopUp\UserControl_PopUp.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.exe.config
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.exe
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.pdb
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.exe
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.pdb
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.csprojResolveAssemblyReference.cache
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\MainWindow.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_PopUp\UserControl_PopUp.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabAdd.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabSnacks.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabWelcome.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabDrinks.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabRemove.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\App.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus_MarkupCompile.cache
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus_MarkupCompile.lref
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\MainWindow.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_PopUp\UserControl_PopUp.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabAdd.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabSnacks.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabWelcome.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabDrinks.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\UserControl_TabContent\UserControl_TabRemove.baml
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.g.resources
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.Properties.Resources.resources
+D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.csproj.GenerateResource.Cache
