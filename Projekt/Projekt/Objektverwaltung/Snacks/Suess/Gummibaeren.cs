@@ -8,5 +8,12 @@ namespace Projekt.Objektverwaltung.Snacks.Suess
 {
     class Gummibaeren
     {
+
+        public override void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
+        {
+            this.snackName = base.snackName;
+            this.istSalzig = base.istSalzig;
+            this.enumSnack = snackArt.Gummibaer;
+        }
     }
 }

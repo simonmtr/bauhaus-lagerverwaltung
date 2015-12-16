@@ -8,5 +8,6 @@ namespace Projekt.Objektverwaltung.Snacks
 {
     class ISnack
     {
+        void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt);
     }
 }

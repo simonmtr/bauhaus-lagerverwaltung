@@ -52,3 +52,6 @@ D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\
 D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.g.resources
 D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.Properties.Resources.resources
 D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.csproj.GenerateResource.Cache
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\bin\Debug\GUI_LagerVerwaltungBauhaus.exe.config
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.exe
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Projekt\GUI_LagerVerwaltungBauhaus\obj\Debug\GUI_LagerVerwaltungBauhaus.pdb

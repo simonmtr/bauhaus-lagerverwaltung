@@ -8,5 +8,18 @@ namespace Projekt.Objektverwaltung.Snacks
 {
     class Snacks
     {
+        public string snackName;
+        public bool istSalzig;
+        public ENUMsnackArt.snackArt enumSnack;
+
+
+        public virtual void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
+        {
+            this.snackName = snackName;
+            this.istSalzig = istSalzig;
+            this.enumSnack = enumSnack;
+
+
+        }
     }
 }

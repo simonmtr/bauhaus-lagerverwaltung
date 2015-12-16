@@ -8,5 +8,6 @@ namespace Projekt.Objektverwaltung.Getraenke
 {
     class IGetraenk
     {
+        void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk);
     }
 }
