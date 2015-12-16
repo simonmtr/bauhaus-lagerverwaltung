@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Objektverwaltung.Snacks
 {
-    class ISnack
+    public interface ISnack
     {
         void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt);
     }

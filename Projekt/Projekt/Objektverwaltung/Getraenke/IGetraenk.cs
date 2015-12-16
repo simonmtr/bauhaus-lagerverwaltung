@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Objektverwaltung.Getraenke
 {
-    class IGetraenk
+    public interface IGetraenk
     {
         void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk);
     }

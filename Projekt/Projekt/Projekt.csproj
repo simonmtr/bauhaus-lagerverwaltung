@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BauhausApplication.cs" />
     <Compile Include="Datenbank\Getraenkbestand.cs" />
     <Compile Include="Datenbank\ILagerGetraenk.cs" />
     <Compile Include="Datenbank\ILagerSnack.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="Objektverwaltung\Getraenke\Unalkoholisch\Softdrink.cs" />
     <Compile Include="Objektverwaltung\Getraenke\Unalkoholisch\Unalkoholisch.cs" />
     <Compile Include="Objektverwaltung\Getraenke\Unalkoholisch\Wasser.cs" />
+    <Compile Include="Objektverwaltung\ObjektverwaltungFactory.cs" />
     <Compile Include="Objektverwaltung\Snacks\ENUMsnackArt.cs" />
     <Compile Include="Objektverwaltung\Snacks\ISnack.cs" />
     <Compile Include="Objektverwaltung\Snacks\Salzig\Chips.cs" />

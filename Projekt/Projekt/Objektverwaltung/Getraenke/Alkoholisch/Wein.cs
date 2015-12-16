@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Projekt.Objektverwaltung.Getraenke.Alkoholisch
 {
-    class Wein
+    public class Wein:Alkoholisch
     {
 
-        public void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
+        public override void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
         {
             this.fuellmenge = base.fuellmenge;
             this.alkohol = base.alkohol;

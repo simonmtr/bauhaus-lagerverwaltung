@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Objektverwaltung.Snacks.Salzig
 {
-    class Salzsnacks
+    public class Salzsnacks:Snacks
     {
         public override void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
         {
