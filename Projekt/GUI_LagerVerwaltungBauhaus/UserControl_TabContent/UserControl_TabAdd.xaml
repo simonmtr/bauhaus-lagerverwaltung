@@ -28,20 +28,23 @@
             <Grid.RowDefinitions>
                 <RowDefinition/><!--0_Label-->
                 <RowDefinition/><!--1_DropDown-->
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition/><!--2_Label-->
+                <RowDefinition/><!--3_DropDown-->
+                <RowDefinition/><!--4_Label-->
+                <RowDefinition/><!--5_DropDown-->
+                <RowDefinition/><!--6_Label-->
+                <RowDefinition/><!--7_DropDown-->
             </Grid.RowDefinitions>
 
         </Grid>
 
 
         <Grid x:Name="Snacks_Inner_LowerGrid" Grid.Row="1"/>
-
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
 
 
 
