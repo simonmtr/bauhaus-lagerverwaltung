@@ -8,7 +8,7 @@
              d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="18.667">
     
     <Grid x:Name="Welcome_Grid">
-        <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_JPG" Source="/GUI_LagerVerwaltungBauhaus;component/Pictures/Bauhaus.JPG" Stretch="Fill"/>
+        <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_Wilkommen_jpg" Source="/GUI_LagerVerwaltungBauhaus;component/Pictures/Bauhaus_Wilkommen.jpg" Stretch="Fill"/>
     </Grid>
 
 </UserControl>
