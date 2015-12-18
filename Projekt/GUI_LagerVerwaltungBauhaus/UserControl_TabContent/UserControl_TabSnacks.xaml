@@ -7,29 +7,29 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="18.667" Background="#FFCC0001">
 
-    <Grid x:Name="Snacks_OuterGrid" d:IsLocked="True">
+    <Grid x:Name="Snacks_OuterGrid">
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="80*"/>
-            <RowDefinition Height="20*"/>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="25*"/>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0" x:Name="Snacks_InnerGrid" d:IsLocked="True">
+        <Grid Grid.Row="0" x:Name="Snacks_InnerGrid">
 
-            <DataGrid x:Name="snacks_DataGrid" Background="White" BorderBrush="#FFCC0001" Margin="10,10,10,0" d:IsLocked="True">
+            <DataGrid x:Name="snacks_DataGrid" Background="White" BorderBrush="#FFCC0001" Margin="10,10,10,0">
 
                 <DataGrid.Columns>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Snack" Header="Snacks"  FontFamily="Tekton Pro" FontSize="18.667" d:IsLocked="True" />
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Taste" Header="Geschmack"  FontFamily="Tekton Pro" FontSize="18.667" d:IsLocked="True" />
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Brand" Header="Marke"  FontFamily="Tekton Pro" FontSize="18.667" d:IsLocked="True"/>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Stock" Header="Bestand"  FontFamily="Tekton Pro" FontSize="18.667" d:IsLocked="True"/>
+                    <DataGridTextColumn x:Name="DataGridTextColumn_Snack" Header="Snacks"  FontFamily="Tekton Pro" FontSize="20" />
+                    <DataGridTextColumn x:Name="DataGridTextColumn_Taste" Header="Geschmack"  FontFamily="Tekton Pro" FontSize="20" />
+                    <DataGridTextColumn x:Name="DataGridTextColumn_Brand" Header="Marke"  FontFamily="Tekton Pro" FontSize="20"/>
+                    <DataGridTextColumn x:Name="DataGridTextColumn_Stock" Header="Bestand"  FontFamily="Tekton Pro" FontSize="20"/>
                 </DataGrid.Columns>
 
             </DataGrid>
 
         </Grid>
 
-        <Grid Grid.Row="1" x:Name="Snacks_Button_Grid" d:IsLocked="True" >
+        <Grid Grid.Row="1" x:Name="Snacks_Button_Grid" >
 
             <Grid.RowDefinitions>
                 <RowDefinition/>
@@ -40,18 +40,18 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <!--0_spacing-->
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="180"/>
                 <!--1_sweets-->
                 <ColumnDefinition/>
                 <!--2_gap-->
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="180"/>
                 <!--3_salty-->
                 <ColumnDefinition/>
                 <!--4_spacing-->
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="1" x:Name="button_Snacks_Sweet" Content="Süß" FontFamily="Tekton Pro" FontSize="18.667" Background="White" BorderBrush="#FFCC0001" Height="35" Width="150" d:IsLocked="True"/>
-            <Button Grid.Row="1" Grid.Column="3" x:Name="button_Snacks_Salt" Content="Salzig" FontFamily="Tekton Pro" FontSize="18.667" Background="White" BorderBrush="#FFCC0001" Height="35" Width="150" d:IsLocked="True"/>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="button_Snacks_Sweet" Content="Süß" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180"/>
+            <Button Grid.Row="1" Grid.Column="3" x:Name="button_Snacks_Salt" Content="Salzig" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180"/>
 
         </Grid>
 

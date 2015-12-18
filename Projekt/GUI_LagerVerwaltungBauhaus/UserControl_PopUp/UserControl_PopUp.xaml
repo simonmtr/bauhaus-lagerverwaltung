@@ -11,12 +11,12 @@
         <Popup x:Name="PopUp_stock">
             <Grid x:Name="PopUp_inner_Grid" Background="#FFCC0001" Height="300" Width="500">
                 <Label x:Name="label_PopUp_attention" Content=" !!! Achtung !!! &#xD;&#xA;Folgende Bestände niedrig:" VerticalAlignment="Top" FontFamily="Tekton Pro" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                <DataGrid x:Name="dataGrid_PopUp" Background="White" BorderBrush="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" Margin="0,72.6,0,0">
+                <DataGrid x:Name="dataGrid_PopUp" Background="White" BorderBrush="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" Margin="0,72.6,0,0">
                     <DataGrid.Columns>
-                        <DataGridTextColumn x:Name="DataGridTextColumn_Getränk" Header="Getränk" FontFamily="Tekton Pro" FontSize="18.667"/>
-                        <DataGridTextColumn x:Name="DataGridTextColumn_Snack" Header="Snack" FontFamily="Tekton Pro" FontSize="18.667"/>
-                        <DataGridTextColumn x:Name="DataGridTextColumn_Marke" Header="Marke" FontFamily="Tekton Pro" FontSize="18.667"/>
-                        <DataGridTextColumn x:Name="DataGridTextColumn_Bestand" Header="Bestand" FontFamily="Tekton Pro" FontSize="18.667"/>
+                        <DataGridTextColumn x:Name="DataGridTextColumn_Getränk" Header="Getränk" FontFamily="Tekton Pro" FontSize="20"/>
+                        <DataGridTextColumn x:Name="DataGridTextColumn_Snack" Header="Snack" FontFamily="Tekton Pro" FontSize="20"/>
+                        <DataGridTextColumn x:Name="DataGridTextColumn_Marke" Header="Marke" FontFamily="Tekton Pro" FontSize="20"/>
+                        <DataGridTextColumn x:Name="DataGridTextColumn_Bestand" Header="Bestand" FontFamily="Tekton Pro" FontSize="20"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>

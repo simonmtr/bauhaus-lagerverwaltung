@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:GUI_LagerVerwaltungBauhaus"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="18.667">
+             d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="20">
     
     <Grid x:Name="Welcome_Grid">
         <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_Wilkommen_jpg" Source="/GUI_LagerVerwaltungBauhaus;component/Pictures/Bauhaus_Wilkommen.jpg" Stretch="Fill"/>

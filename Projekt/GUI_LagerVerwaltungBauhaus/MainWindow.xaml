@@ -5,36 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_LagerVerwaltungBauhaus"
         mc:Ignorable="d"
-        Title="Café Bauhaus" Icon="Pictures/Bauhaus.JPG" FontFamily="Tekton Pro" FontSize="18.667">
+        Title="Café Bauhaus" Icon="Pictures/Bauhaus.JPG" FontFamily="Tekton Pro" FontSize="20">
     
     <Grid x:Name="MainWindow_Grid">
         <TabControl x:Name="TabControl" >
 
-            <TabItem x:Name="TabItem_Welcome" Header="Willkommen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="35" >
+            <TabItem x:Name="TabItem_Welcome" Header="Willkommen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="45" >
                 <Grid x:Name="TabWelcome_Grid">
                     <local:UserControl_TabWelcome/>
                 </Grid>
             </TabItem>
 
-            <TabItem x:Name="TabItem_Drinks" Header="Getränke" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="35">
+            <TabItem x:Name="TabItem_Drinks" Header="Getränke" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="45">
                 <Grid x:Name="TabDrinks_Grid">
                     <local:UserControl_TabDrinks/>
                 </Grid>
             </TabItem>
 
-            <TabItem x:Name="TabItem_Snacks" Header="Snacks" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="35">
+            <TabItem x:Name="TabItem_Snacks" Header="Snacks" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="45">
                 <Grid x:Name="TabSnacks_Grid"> 
                     <local:UserControl_TabSnacks/>
                 </Grid>
             </TabItem>
 
-            <TabItem x:Name="TabItem_Add" Header="Hinzufügen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="35">
+            <TabItem x:Name="TabItem_Add" Header="Hinzufügen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="45">
                 <Grid x:Name="TabAdd_Grid">
                     <local:UserControl_TabAdd/>
                 </Grid>
             </TabItem>
 
-            <TabItem x:Name="TabItem_Remove" Header="Entfernen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="18.667" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="35">
+            <TabItem x:Name="TabItem_Remove" Header="Entfernen" Background="#FFCC0001" FontFamily="Tekton Pro" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FFCC0001" Foreground="Black" Height="45">
                 <Grid x:Name="TabRemove_Grid">
                     <local:UserControl_TabRemove/>
                 </Grid>
