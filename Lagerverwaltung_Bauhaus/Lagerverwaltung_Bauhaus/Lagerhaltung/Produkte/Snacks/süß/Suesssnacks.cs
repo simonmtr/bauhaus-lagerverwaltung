@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks.süß
+{
+    public class Suesssnacks : Snacks
+    {
+        public override void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
+        {
+            this.snackName = base.snackName;
+            this.istSalzig = false;
+            this.enumSnack = base.enumSnack;
+
+        }
+    }
+}

@@ -1,3 +1,0 @@
-c:\users\simon\documents\visual studio 2015\Projects\Projekt\Projekt\bin\Debug\Projekt.exe.config
-c:\users\simon\documents\visual studio 2015\Projects\Projekt\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache
-D:\Documents\GIT\Bauhaus_Lagerverwaltung\Projekt\Projekt\bin\Debug\Projekt.exe.config
