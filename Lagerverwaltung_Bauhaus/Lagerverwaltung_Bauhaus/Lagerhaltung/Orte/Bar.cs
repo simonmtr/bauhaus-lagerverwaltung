@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Orte
 {
-    class Bar
+    public class Bar
     {
     }
 }

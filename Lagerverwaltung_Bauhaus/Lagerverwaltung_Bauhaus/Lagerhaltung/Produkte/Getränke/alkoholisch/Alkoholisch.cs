@@ -9,13 +9,9 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke.alkoholisch
     public class Alkoholisch : Getraenk
     {
 
-        public override void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
+        public override Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
         {
-            this.fuellmenge = base.fuellmenge;
-            this.alkohol = true;
-            this.anzahl = base.anzahl;
-            this.getraenkeName = base.getraenkeName;
-            this.enumGetraenk = base.enumGetraenk;
+            return new Getraenk(fuellmenge, true, anzahl, getraenkeName, enumGetraenk);
         }
     }
 }

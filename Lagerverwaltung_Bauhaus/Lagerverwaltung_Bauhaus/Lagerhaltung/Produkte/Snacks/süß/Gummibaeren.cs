@@ -9,11 +9,9 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks.süß
     public class Gummibaeren : Suesssnacks
     {
 
-        public override void erstelleSnack(string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
+        public override Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack)
         {
-            this.snackName = base.snackName;
-            this.istSalzig = base.istSalzig;
-            this.enumSnack = snackArt.Gummibaer;
+            return new Snacks(anzahl,snackName, false, snackArt.Gummibaer);
         }
     }
 }

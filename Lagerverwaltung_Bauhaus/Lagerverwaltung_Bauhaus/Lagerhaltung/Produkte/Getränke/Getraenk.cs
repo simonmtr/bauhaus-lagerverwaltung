@@ -17,14 +17,27 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke
         public ENUMgetraenkeArt.getraenkeArt enumGetraenk;
 
         //konstruktor
-        public virtual void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
+        public Getraenk()
+        {
+        }
+        public Getraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName,ENUMgetraenkeArt.getraenkeArt enumGetraenk)
         {
             this.fuellmenge = fuellmenge;
             this.alkohol = alkohol;
             this.anzahl = anzahl;
             this.getraenkeName = getraenkeName;
-            this.enumGetraenk = enumGetraenk;
+            this.enumGetraenk=enumGetraenk;
+
         }
+        public virtual Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
+        {
+            return new Getraenk(fuellmenge, alkohol, anzahl, getraenkeName, enumGetraenk);
+        }
+
+        // datenbank
+
+        public int GetraenkId { get; set; }
+        
 
         //getter und setter
         public double Fuellmenge
@@ -42,7 +55,7 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke
             get;
             set;
         }
-        public string GetranekeName
+        public string GetraenkeName
         {
             get;
             set;

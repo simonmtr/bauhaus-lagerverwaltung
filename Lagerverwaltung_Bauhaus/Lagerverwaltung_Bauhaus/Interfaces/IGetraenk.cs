@@ -8,6 +8,6 @@ namespace Lagerverwaltung_Bauhaus.Interfaces
 {
     public interface IGetraenk
     {
-        void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk);
+        Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk);
     }
 }

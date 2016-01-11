@@ -27,7 +27,7 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Remove_Decrease_Click(object sender, RoutedEventArgs e)
         {
-            RemoveFromDatabase entfernen = new RemoveFromDatabase();
+            //RemoveFromDatabase entfernen = new RemoveFromDatabase();
         }
     }
 }

@@ -9,12 +9,12 @@ namespace Lagerverwaltung_Bauhaus.Factory
 {
     class ObjektverwaltungFactory
     {
-        private Getraenkebestand getraenkeBestand;
-        private Snackbestand snackBestand;
-        public ObjektverwaltungFactory()
-        {
-            getraenkeBestand = new Getraenkebestand();
-            snackBestand = new Snackbestand();
-        }
+        //private Getraenkebestand getraenkeBestand;
+        //private Snackbestand snackBestand;
+        //public ObjektverwaltungFactory()
+        //{
+        //    getraenkeBestand = new Getraenkebestand();
+        //    snackBestand = new Snackbestand();
+        //}
     }
 }

@@ -27,7 +27,7 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Add_Increase_Click(object sender, RoutedEventArgs e)
         {
-            AddToDatabase buchen = new AddToDatabase();
+         //   AddToDatabase buchen = new AddToDatabase();
         }
     }
 }

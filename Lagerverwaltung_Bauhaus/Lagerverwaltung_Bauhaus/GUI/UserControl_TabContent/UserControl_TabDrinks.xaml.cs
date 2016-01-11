@@ -27,7 +27,7 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Drinks_fridge_Click(object sender, RoutedEventArgs e)
         {
-            Drinks_dataTableGrid.ItemsSource = myData;//noch zu implementieren
+            //Drinks_dataTableGrid.ItemsSource = myData;//noch zu implementieren
         }
 
         private void button_Drinks_bar_Click(object sender, RoutedEventArgs e)

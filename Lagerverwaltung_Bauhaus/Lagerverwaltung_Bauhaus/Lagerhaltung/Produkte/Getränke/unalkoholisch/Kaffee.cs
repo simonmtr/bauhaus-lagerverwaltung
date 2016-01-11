@@ -9,13 +9,10 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke.unalkoholisch
     public class Kaffee : Unalkoholisch
     {
 
-        public override void erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
+        public override Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk)
         {
-            this.fuellmenge = base.fuellmenge;
-            this.alkohol = base.alkohol;
-            this.anzahl = base.anzahl;
-            this.getraenkeName = base.getraenkeName;
-            this.enumGetraenk = getraenkeArt.Kaffee;
+            return new Getraenk(fuellmenge, false, anzahl, getraenkeName, getraenkeArt.Kaffee);
+
         }
     }
 }
