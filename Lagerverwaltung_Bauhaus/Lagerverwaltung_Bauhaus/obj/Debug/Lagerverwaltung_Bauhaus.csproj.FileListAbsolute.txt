@@ -173,3 +173,5 @@ C:\Users\Simon\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\
 C:\Users\Simon\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.xml
 C:\Users\Simon\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Simon\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.Properties.Resources.resources
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe.config
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.pdb

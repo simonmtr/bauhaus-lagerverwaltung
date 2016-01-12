@@ -17,9 +17,9 @@
 
 
         <Grid x:Name="Drinks_InnerGrid" Grid.Row="0" Margin="10,10,10,0">
-            <DataGrid x:Name="Drinks_dataTableGrid" Background="White" BorderBrush="#FFCC0001" >
+            <DataGrid x:Name="Drinks_dataTableGrid" Background="White" BorderBrush="#FFCC0001" IsReadOnly="True" >
 
-                
+
             </DataGrid>
         </Grid>
 

@@ -1,5 +1,4 @@
 ﻿using Lagerverwaltung_Bauhaus.Datenbank;
-using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 using System;
 using System.Collections.Generic;
@@ -28,16 +27,44 @@ namespace Lagerverwaltung_Bauhaus
             InitializeComponent();
         }
 
-        private void button_Add_Increase_Click(object sender, RoutedEventArgs e)
-        {
-        
-            String input = comboBox_Add_Art.SelectionBoxItem as String;
-           // ....
-            Abfragen bauhausApp = new Abfragen();
-            bauhausApp.getraenkZuDbHinzufuegen(0.5, true, 2, input, ENUMgetraenkeArt.getraenkeArt.Bier, ENUMLagerort.Lagerort.Bar);
+        //private void button_Add_Increase_Click(object sender, RoutedEventArgs e)
+        //{
 
-            MessageBox.Show("Erfolgreich hinzugefügt");
+        //    String input = comboBox_Add_Art.SelectionBoxItem as String;
+        //   // ....
+        //    Abfragen bauhausApp = new Abfragen();
+        //    bauhausApp.getraenkZuDbHinzufuegen(0.5, true, 2, input, ENUMgetraenkeArt.getraenkeArt.Bier, ENUMLagerort.Lagerort.Bar);
+
+        //    MessageBox.Show("Erfolgreich hinzugefügt");
+        //}
+
+        private void button_Add_Increase_Drink_Click(object sender, RoutedEventArgs e)
+        {
+            String artInput = comboBox_Add_drinkArt.SelectionBoxItem as String;
+            String alcoholInput = comboBox_Add_alcohol.SelectionBoxItem as String; //muss noch in bool gecastet werden
+            String bSizeInput = comboBox_Add_bottleSize.SelectionBoxItem as String;//muss noch in double gecastet werden
+            String brandInput = comboBox_Add_Brand.SelectionBoxItem as String;
+            String drinkAmountInput = comboBox_Add_drinkAmount.SelectionBoxItem as String; //muss noch in int gecastet werden
+            String dStorageLoc = comboBox_Add_drinkStorageLocation.SelectionBoxItem as String;
+
+            Abfragen auswahlGetraenke = new Abfragen();
+            auswahlGetraenke.getraenkZuDbHinzufuegen(bSizeInput, alcoholInput, drinkAmountInput, brandInput, artInput, dStorageLoc);
+            MessageBox.Show("Getränke erfolgreich hinzugefügt");
+        }
+
+        private void button_Add_Increase_Snack_Click(object sender, RoutedEventArgs e)
+        {
+            String saltyInput = comboBox_Add_saltySweet.SelectionBoxItem as String;
+            String snackAmountInput = comboBox_Add_snackAmount.SelectionBoxItem as String;
+            String snackArtInput = comboBox_Add_snackArt.SelectionBoxItem as String;
+            String sStorageLoc = comboBox_Add_snackStorage.SelectionBoxItem as String;
+            String tasteInput = comboBox_Add_taste.SelectionBoxItem as String;
+
+            Abfragen auswahlSnacks = new Abfragen();
+            auswahlSnacks.snackZuDbHinzufuegen(snackAmountInput, tasteInput, saltyInput, snackArtInput, sStorageLoc);//tasteInput statt name
+            MessageBox.Show("Snacks erfolgreich hinzugefügt");
+
         }
     }
-    }
+}
 

@@ -81,10 +81,12 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch (EntryPointNotFoundException e)
                 {
+                    Console.WriteLine("EntryPointNotFoundException caught.", e);
                     MessageBox.Show("Dieser Eintrag existiert nicht.");
                 }
                 catch (Exception e)
                 {
+                    Console.WriteLine("Exception caught.", e);
                     MessageBox.Show("Es ist ein Fehler aufgetreten.");
                 }
             }
@@ -105,10 +107,12 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch (EntryPointNotFoundException e)
                 {
+                    Console.WriteLine("EntryPointNotFoundException caught.", e);
                     MessageBox.Show("Dieser Eintrag existiert nicht.");
                 }
                 catch (Exception e)
                 {
+                    Console.WriteLine("Exception caught.", e);
                     MessageBox.Show("Es ist ein Fehler aufgetreten.");
                 }
             }
@@ -127,7 +131,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch (Exception e)
                 {
-                    
+                    Console.WriteLine("Exception caught.", e);
                 }
                 if (alkohol.Equals("Ja"))
                 {
@@ -172,7 +176,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch (Exception e)
                 {
-
+                    Console.WriteLine("Exception caught.", e);
                 }
                 var snack = new Snacks
                 {
