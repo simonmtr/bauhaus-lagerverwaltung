@@ -10,20 +10,23 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung
 {
     public class Snackbestand123 : DbContext
     {
-        public DbSet<Snacks> Snackss { get; set; }
-
-        public List<Snacks> getSnackDatenbank()
+        //public virtual DbSet<Snacks> Snackss { get; set; }
+        public Snackbestand123()
         {
-            List<Snacks> snackDatenbank = new List<Snacks>();
-            using (var db = new Snackbestand123())
-            {
-                var query = from b in db.Snackss orderby b.snackName select b;
-                foreach (Snacks item in query)
-                {
-                    snackDatenbank.Add(item);
-                }
-            }
-            return snackDatenbank;
+          //  var db = new Getraenkebestand123();
         }
+        //public List<Snacks> getSnackDatenbank()
+        //{
+        //    List<Snacks> snackDatenbank = new List<Snacks>();
+        //    using (var db = new Snackbestand123())
+        //    {
+        //        var query = from b in db.Snackss orderby b.snackName select b;
+        //        foreach (Snacks item in query)
+        //        {
+        //            snackDatenbank.Add(item);
+        //        }
+        //    }
+        //    return snackDatenbank;
+        //}
     }
 }

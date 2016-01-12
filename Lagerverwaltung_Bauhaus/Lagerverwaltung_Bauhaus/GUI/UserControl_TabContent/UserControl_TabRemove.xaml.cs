@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lagerverwaltung_Bauhaus.Datenbank;
 
 namespace Lagerverwaltung_Bauhaus
 {
@@ -27,7 +28,10 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Remove_Decrease_Click(object sender, RoutedEventArgs e)
         {
-            //RemoveFromDatabase entfernen = new RemoveFromDatabase();
+           
+            String delete = comboBox_Remove_Art.SelectionBoxItem as String;
+            Abfragen BhApp = new Abfragen();
+            BhApp.getraenkAusDbLoeschen(delete);
         }
     }
 }

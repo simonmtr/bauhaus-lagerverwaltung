@@ -17,15 +17,9 @@
 
 
         <Grid x:Name="Drinks_InnerGrid" Grid.Row="0" Margin="10,10,10,0">
-            <DataGrid x:Name="Drinks_dataTableGrid" Background="White" BorderBrush="#FFCC0001">
+            <DataGrid x:Name="Drinks_dataTableGrid" Background="White" BorderBrush="#FFCC0001" >
 
-                <DataGrid.Columns>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Drink" Header="Getränk" FontFamily="Tekton Pro" FontSize="20"/>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Brand" Header="Marke" FontFamily="Tekton Pro" FontSize="20"/>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Stock" Header="Bestand" FontFamily="Tekton Pro" FontSize="20"/>
-                    <DataGridTextColumn x:Name="DataGridTextColumn_Content" Header="Inhalt (L)" FontFamily="Tekton Pro" FontSize="20"/>
-                </DataGrid.Columns>
-
+                
             </DataGrid>
         </Grid>
 

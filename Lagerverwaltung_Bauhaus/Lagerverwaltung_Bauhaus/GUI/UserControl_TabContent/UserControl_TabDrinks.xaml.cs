@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lagerverwaltung_Bauhaus.Datenbank;
+using Lagerverwaltung_Bauhaus.Lagerhaltung;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,12 +29,21 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Drinks_fridge_Click(object sender, RoutedEventArgs e)
         {
-            //Drinks_dataTableGrid.ItemsSource = myData;//noch zu implementieren
+           // Abfragen barAbfrage = new Abfragen();
+           // var getraenkeListe = barAbfrage.getGesamtGetraenke();
+           //Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+           
+            using (var db = new Lagerbestand())
+            {
+             var query = from b in db.Getraenks select b;
+
+                Drinks_dataTableGrid.ItemsSource =    query.ToList()    ;
+            }
         }
 
         private void button_Drinks_bar_Click(object sender, RoutedEventArgs e)
         {
-
+            //Drinks_dataTableGrid.Ite
         }
 
         private void button_Drinks_stock_Click(object sender, RoutedEventArgs e)

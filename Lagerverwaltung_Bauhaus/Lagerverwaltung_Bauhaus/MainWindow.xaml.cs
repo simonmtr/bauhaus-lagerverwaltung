@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Lagerverwaltung_Bauhaus.Factory;
+using Lagerverwaltung_Bauhaus.Modell;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 
 namespace Lagerverwaltung_Bauhaus
 {
@@ -23,6 +27,8 @@ namespace Lagerverwaltung_Bauhaus
         public MainWindow()
         {
             InitializeComponent();
+            BauhausApplication bauhausApp = new BauhausApplication();
+            bauhausApp.dbErzeugen();
         }
     }
 }

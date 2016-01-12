@@ -46,7 +46,9 @@
 
             <!--Linke Seite-->
             <Label x:Name="Label_Remove_Art" Content="Art" Grid.Row="0" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
-            <ComboBox x:Name="comboBox_Remove_Art"  Grid.Row="1" FontFamily="TektonPro" BorderBrush="#FFCC0001"/>
+            <ComboBox x:Name="comboBox_Remove_Art"  Grid.Row="1" FontFamily="TektonPro" BorderBrush="#FFCC0001">
+                <ComboBoxItem Content="Augustiner" HorizontalAlignment="Left" Width="448"/>
+            </ComboBox>
             <Label x:Name="Label_Remove_Marke" Content="Marke" Grid.Row="2" FontFamily="TektonPro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_Brand" Grid.Row="3" FontFamily="TektonPro" BorderBrush="#FFCC0001" />
             <Label x:Name="Label_Remove_Amount" Content="Menge" Grid.Row="4" FontFamily="TektonPro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>

@@ -7,14 +7,12 @@ using Lagerverwaltung_Bauhaus.Lagerhaltung;
 
 namespace Lagerverwaltung_Bauhaus.Factory
 {
-    class ObjektverwaltungFactory
+    public class ObjektverwaltungFactory
     {
-        //private Getraenkebestand getraenkeBestand;
-        //private Snackbestand snackBestand;
-        //public ObjektverwaltungFactory()
-        //{
-        //    getraenkeBestand = new Getraenkebestand();
-        //    snackBestand = new Snackbestand();
-        //}
+
+        public ObjektverwaltungFactory()
+        {
+
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Lagerverwaltung_Bauhaus.Factory;
 
 namespace Lagerverwaltung_Bauhaus
 {
@@ -13,5 +14,6 @@ namespace Lagerverwaltung_Bauhaus
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

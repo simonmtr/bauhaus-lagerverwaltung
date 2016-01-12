@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lagerverwaltung_Bauhaus.Lagerhaltung;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace Lagerverwaltung_Bauhaus
         public UserControl_TabSnacks()
         {
             InitializeComponent();
+        }
+
+        private void button_Snacks_Sweet_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

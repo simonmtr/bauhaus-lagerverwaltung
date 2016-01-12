@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Lagerverwaltung_Bauhaus.Datenbank;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +30,14 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Add_Increase_Click(object sender, RoutedEventArgs e)
         {
-         //   AddToDatabase buchen = new AddToDatabase();
+        
+            String input = comboBox_Add_Art.SelectionBoxItem as String;
+           // ....
+            Abfragen bauhausApp = new Abfragen();
+            bauhausApp.getraenkZuDbHinzufuegen(0.5, true, 2, input, ENUMgetraenkeArt.getraenkeArt.Bier, ENUMLagerort.Lagerort.Bar);
+
+            MessageBox.Show("Erfolgreich hinzugefügt");
         }
     }
-}
+    }
+

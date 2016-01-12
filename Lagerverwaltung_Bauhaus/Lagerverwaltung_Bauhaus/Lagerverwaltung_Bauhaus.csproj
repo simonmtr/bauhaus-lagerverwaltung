@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Lagerverwaltung_Bauhaus</RootNamespace>
     <AssemblyName>Lagerverwaltung_Bauhaus</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Datenbank\Abfragen.cs" />
     <Compile Include="Factory\ObjektverwaltungFactory.cs" />
     <Compile Include="GUI\UserControl_TabContent\UserControl_TabWelcome.xaml.cs">
       <DependentUpon>UserControl_TabWelcome.xaml</DependentUpon>
@@ -95,8 +97,9 @@
     <Compile Include="Interfaces\ILagerGetraenk.cs" />
     <Compile Include="Interfaces\ILagerSnack.cs" />
     <Compile Include="Interfaces\ISnack.cs" />
-    <Compile Include="Lagerhaltung\Getraenkebestand123.cs" />
+    <Compile Include="Lagerhaltung\Lagerbestand.cs" />
     <Compile Include="Lagerhaltung\Orte\Bar.cs" />
+    <Compile Include="Lagerhaltung\Orte\ENUMLagerort.cs" />
     <Compile Include="Lagerhaltung\Orte\Lager.cs" />
     <Compile Include="Lagerhaltung\Orte\Theke.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\alkoholisch\Alkoholisch.cs" />
@@ -183,9 +186,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datenbank\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Ressourcen\Bilder\Bauhaus.JPG" />
     <Resource Include="Ressourcen\Bilder\Bauhaus_herz.JPG" />
