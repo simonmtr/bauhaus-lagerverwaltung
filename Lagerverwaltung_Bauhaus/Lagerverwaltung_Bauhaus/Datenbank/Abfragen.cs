@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using Lagerverwaltung_Bauhaus.Lagerhaltung;
-using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks;
 
@@ -14,40 +13,44 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
     public class Abfragen
     {
         public Abfragen() { }
-        public void getSuessSnacks()
+        public List<Snacks>getSuessSnacks()
         {
             using (var db = new Lagerbestand())
             {
                 var query = from b in db.Snackss where b.istSalzig == true select b;
+                return query.ToList();
             }
         }
-        public void getSalzSnacks()
+        public List<Snacks> getSalzSnacks()
         {
             using (var db = new Lagerbestand())
             {
                 var query = from b in db.Snackss where b.istSalzig == false select b;
+                return query.ToList();
             }
         }
-        public void getLagerGetraenke()
+        public List<Getraenk> getLagerGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                var query = from b in db.Snackss where b.enumLagerort == ENUMLagerort.Lagerort.Lager select b;
+                var query = from b in db.Getraenks where b.lagerort.Equals("Lager") select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getBarGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                var query = from b in db.Getraenks where b.enumLagerort == ENUMLagerort.Lagerort.Bar select b;
+                var query = from b in db.Getraenks where b.lagerort.Equals("Bar") select b;
                 return query.ToList();
             }
         }
-        public void getThekeGetraenke()
+        public List<Getraenk> getThekeGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                var query = from b in db.Getraenks where b.enumLagerort == ENUMLagerort.Lagerort.Theke select b;
+                var query = from b in db.Getraenks where b.lagerort.Equals("Theke") select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getGesamtGetraenke()
@@ -111,7 +114,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
             }
         }
 
-        public void getraenkZuDbHinzufuegen(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk, ENUMLagerort.Lagerort enumLagerort)
+        public void getraenkZuDbHinzufuegen(double fuellmenge, string alkohol, int anzahl, string getraenkeName, string getraenkeArt,string lagerort)
         {
             using (var db = new Lagerbestand())
             {
@@ -124,32 +127,63 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch (Exception e)
                 {
-
+                    
                 }
-                var getraenk = new Getraenk
+                if (alkohol.Equals("Ja"))
                 {
-                    Fuellmenge = fuellmenge,
-                    Alkohol = alkohol,
-                    Anzahl = anzahl,
-                    GetraenkeName = getraenkeName,
-                    enumGetraenk = enumGetraenk,
-                    enumLagerort = enumLagerort
-
-                };
-                db.Getraenks.Add(getraenk);
+                    var getraenk1 = new Getraenk
+                    {
+                        Fuellmenge = fuellmenge,
+                        Alkohol = true,
+                        Anzahl = anzahl,
+                        GetraenkeName = getraenkeName,
+                        getraenkeArt = getraenkeArt,
+                        lagerort = lagerort
+                    };
+                    db.Getraenks.Add(getraenk1);
+                }
+                else
+                {
+                    var getraenk = new Getraenk
+                    {
+                        Fuellmenge = fuellmenge,
+                        Alkohol = false,
+                        Anzahl = anzahl,
+                        GetraenkeName = getraenkeName,
+                        getraenkeArt = getraenkeArt,
+                        lagerort = lagerort
+                    };
+                    db.Getraenks.Add(getraenk);
+                }
                 db.SaveChanges();
             }
-
         }
 
-        public void snackZuDbHinzufuegen(int anzahl, string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt, ENUMLagerort.Lagerort enumLagerort)
+        public void snackZuDbHinzufuegen(int anzahl, string snackName, bool istSalzig, string snackArt, string lagerort)
         {
             using (var db = new Lagerbestand())
             {
 
                 var query = from b in db.Snackss where b.snackName == snackName select b;
-                int aktAnzahl = query.First().anzahl;
-                aktAnzahl = aktAnzahl + anzahl;
+                try
+                {
+                    int aktAnzahl = query.First().anzahl;
+                    aktAnzahl = aktAnzahl + anzahl;
+                }
+                catch (Exception e)
+                {
+
+                }
+                var snack = new Snacks
+                {
+                    Anzahl = anzahl,
+                    SnackName = snackName,
+                    IstSalzig = istSalzig,
+                    SnackArt=snackArt,
+                    lagerort = lagerort
+
+                };
+                db.Snackss.Add(snack);
                 db.SaveChanges();
 
             }

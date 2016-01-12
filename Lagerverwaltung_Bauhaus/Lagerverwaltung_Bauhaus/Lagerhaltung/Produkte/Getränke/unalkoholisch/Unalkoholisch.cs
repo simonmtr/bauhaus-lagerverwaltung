@@ -10,9 +10,9 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke.unalkoholisch
     public class Unalkoholisch : Getraenk
     {
 
-        public override Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk,ENUMLagerort.Lagerort enumLagerort)
+        public override Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, string getraenkeArt, string lagerort)
         {
-            return new Getraenk(fuellmenge, false, anzahl, getraenkeName, enumGetraenk, enumLagerort);
+            return new Getraenk(fuellmenge, false, anzahl, getraenkeName, getraenkeArt, lagerort);
         }
     }
 }

@@ -9,31 +9,31 @@ using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 
 namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks
 {
-    public class Snacks : ENUMsnackArt, ISnack
+    public class Snacks : ISnack
     {
         //variablen
         public int anzahl;
         public string snackName;
         public bool istSalzig;
-        public ENUMsnackArt.snackArt enumSnack;
-        public ENUMLagerort.Lagerort enumLagerort;
+        public string snackArt;
+        public string lagerort;
 
         //konstruktor
         public Snacks()
         {
         }
-        public Snacks(int anzahl,string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt, ENUMLagerort.Lagerort enumLagerort)
+        public Snacks(int anzahl,string snackName, bool istSalzig, string snackArt, string lagerort)
         {
             this.anzahl = anzahl;
             this.snackName = snackName;
             this.istSalzig = istSalzig;
-            this.enumSnack = snackArt;
-            this.enumLagerort=enumLagerort;
+            this.snackArt = snackArt;
+            this.lagerort=lagerort;
         }
 
-        public virtual Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt,ENUMLagerort.Lagerort enumLagerort)
+        public virtual Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, string snackArt,string lagerort)
         {
-            return new Snacks(anzahl,snackName, istSalzig, snackArt,enumLagerort);
+            return new Snacks(anzahl,snackName, istSalzig, snackArt,lagerort);
         }
 
         // datenbank
@@ -44,7 +44,8 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks
         //getter und setter
         public int Anzahl
         {
-            get; set;
+            get;
+            set;
         }
         public string SnackName
         {
@@ -52,6 +53,16 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks
             set;
         }
         public bool IstSalzig
+        {
+            get;
+            set;
+        }
+        public string Lagerort
+        {
+            get;
+            set;
+        }
+        public string SnackArt
         {
             get;
             set;

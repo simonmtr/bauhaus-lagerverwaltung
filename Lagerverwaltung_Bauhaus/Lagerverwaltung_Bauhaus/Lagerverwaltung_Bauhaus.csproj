@@ -94,26 +94,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Interfaces\IGetraenk.cs" />
-    <Compile Include="Interfaces\ILagerGetraenk.cs" />
-    <Compile Include="Interfaces\ILagerSnack.cs" />
     <Compile Include="Interfaces\ISnack.cs" />
     <Compile Include="Lagerhaltung\Lagerbestand.cs" />
-    <Compile Include="Lagerhaltung\Orte\Bar.cs" />
-    <Compile Include="Lagerhaltung\Orte\ENUMLagerort.cs" />
-    <Compile Include="Lagerhaltung\Orte\Lager.cs" />
-    <Compile Include="Lagerhaltung\Orte\Theke.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\alkoholisch\Alkoholisch.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\alkoholisch\Bier.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\alkoholisch\Schnaps.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\alkoholisch\Wein.cs" />
-    <Compile Include="Lagerhaltung\Produkte\Getränke\ENUMgetraenkeArt.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\Getraenk.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\unalkoholisch\Kaffee.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\unalkoholisch\Saft.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\unalkoholisch\Softdrink.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\unalkoholisch\Unalkoholisch.cs" />
     <Compile Include="Lagerhaltung\Produkte\Getränke\unalkoholisch\Wasser.cs" />
-    <Compile Include="Lagerhaltung\Produkte\Snacks\ENUMsnackArt.cs" />
     <Compile Include="Lagerhaltung\Produkte\Snacks\salzig\Chips.cs" />
     <Compile Include="Lagerhaltung\Produkte\Snacks\salzig\Erdnuesse.cs" />
     <Compile Include="Lagerhaltung\Produkte\Snacks\salzig\ErdnussFlips.cs" />

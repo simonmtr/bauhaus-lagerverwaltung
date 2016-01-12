@@ -8,33 +8,33 @@ using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 
 namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke
 {
-    public class Getraenk : ENUMgetraenkeArt, IGetraenk
+    public class Getraenk : IGetraenk
     {
         //variablen
         public double fuellmenge;
         public bool alkohol;
         public int anzahl;
         public string getraenkeName;
-        public ENUMgetraenkeArt.getraenkeArt enumGetraenk;
-        public ENUMLagerort.Lagerort enumLagerort;
+        public string getraenkeArt;
+        public string lagerort;
 
         //konstruktor
         public Getraenk()
         {
         }
-        public Getraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName,ENUMgetraenkeArt.getraenkeArt enumGetraenk, ENUMLagerort.Lagerort enumLagerort)
+        public Getraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName,string getraenkeArt, string lagerort)
         {
             this.fuellmenge = fuellmenge;
             this.alkohol = alkohol;
             this.anzahl = anzahl;
             this.getraenkeName = getraenkeName;
-            this.enumGetraenk=enumGetraenk;
-            this.enumLagerort = enumLagerort;
+            this.getraenkeArt=getraenkeArt;
+            this.lagerort = lagerort;
 
         }
-        public virtual Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, ENUMgetraenkeArt.getraenkeArt enumGetraenk, ENUMLagerort.Lagerort enumLagerort)
+        public virtual Getraenk erstelleGetraenk(double fuellmenge, bool alkohol, int anzahl, string getraenkeName, string getraenkeArt, string lagerort)
         {
-            return new Getraenk(fuellmenge, alkohol, anzahl, getraenkeName, enumGetraenk, enumLagerort);
+            return new Getraenk(fuellmenge, alkohol, anzahl, getraenkeName, getraenkeArt, lagerort);
         }
 
         // datenbank
@@ -59,6 +59,16 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke
             set;
         }
         public string GetraenkeName
+        {
+            get;
+            set;
+        }
+        public string GetraenkeArt
+        {
+            get;
+            set;
+        }
+        public string Lagerort
         {
             get;
             set;

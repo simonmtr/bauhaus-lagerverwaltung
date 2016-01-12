@@ -29,16 +29,16 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Drinks_fridge_Click(object sender, RoutedEventArgs e)
         {
-           // Abfragen barAbfrage = new Abfragen();
-           // var getraenkeListe = barAbfrage.getGesamtGetraenke();
-           //Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+           Abfragen barAbfrage = new Abfragen();
+           var getraenkeListe = barAbfrage.getGesamtGetraenke();
+           Drinks_dataTableGrid.ItemsSource = getraenkeListe;
            
-            using (var db = new Lagerbestand())
-            {
-             var query = from b in db.Getraenks select b;
+            //using (var db = new Lagerbestand())
+            //{
+            // var query = from b in db.Getraenks select b;
 
-                Drinks_dataTableGrid.ItemsSource =    query.ToList()    ;
-            }
+            //    Drinks_dataTableGrid.ItemsSource =    query.ToList()    ;
+            //}
         }
 
         private void button_Drinks_bar_Click(object sender, RoutedEventArgs e)

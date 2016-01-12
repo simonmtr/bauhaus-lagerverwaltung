@@ -10,6 +10,6 @@ namespace Lagerverwaltung_Bauhaus.Interfaces
 {
     public interface ISnack
     {
-        Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, ENUMsnackArt.snackArt snackArt, ENUMLagerort.Lagerort enumLagerort);
+        Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, string snackArt, string enumLagerort);
     }
 }

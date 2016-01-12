@@ -9,9 +9,9 @@ namespace Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks.salzig
 {
     public class ErdnussFlips : Salzsnacks
     {
-        public override Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, ENUMsnackArt.snackArt enumSnack,ENUMLagerort.Lagerort enumLagerort)
+        public override Snacks erstelleSnack(int anzahl,string snackName, bool istSalzig, string snackArt, string lagerort)
         {
-            return new Snacks(anzahl,snackName, true, snackArt.ErdnussFlips, enumLagerort);
+            return new Snacks(anzahl,snackName, true, "Erdnussflips", lagerort);
 
         }
     }
