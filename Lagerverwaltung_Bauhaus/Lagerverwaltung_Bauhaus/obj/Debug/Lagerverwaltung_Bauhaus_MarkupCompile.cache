@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Tobias\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\
 Lagerverwaltung_Bauhaus
 none
 false
 DEBUG;TRACE
-C:\Users\Tobias\Desktop\Wif2\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\App.xaml
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\App.xaml
 7-625589820
 
 441558056942
-16605618431
+16458539857
 MainWindow.xaml;GUI\UserControl_TabContent\UserControl_TabWelcome.xaml;GUI\UserControl_PopUp\UserControl_PopUp.xaml;GUI\UserControl_TabContent\UserControl_TabAdd.xaml;GUI\UserControl_TabContent\UserControl_TabDrinks.xaml;GUI\UserControl_TabContent\UserControl_TabRemove.xaml;GUI\UserControl_TabContent\UserControl_TabSnacks.xaml;
 
 False

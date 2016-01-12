@@ -26,9 +26,11 @@ namespace Lagerverwaltung_Bauhaus
     {
         public MainWindow()
         {
-            InitializeComponent();
-            BauhausApplication bauhausApp = new BauhausApplication();
-            bauhausApp.dbErzeugen();
+            Console.WriteLine("haha");
+            Console.ReadKey();
+           // InitializeComponent();
+            //BauhausApplication bauhausApp = new BauhausApplication();
+            //bauhausApp.dbErzeugen();
         }
     }
 }

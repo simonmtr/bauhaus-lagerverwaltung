@@ -28,10 +28,6 @@ namespace Lagerverwaltung_Bauhaus.Modell
 
 
 
-
-
-
-
         
 
 
