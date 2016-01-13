@@ -66,6 +66,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Datenbank\Abfragen.cs" />
+    <Compile Include="Datenbank\DatenbankChecks.cs" />
     <Compile Include="Factory\ObjektverwaltungFactory.cs" />
     <Compile Include="GUI\UserControl_TabContent\UserControl_TabWelcome.xaml.cs">
       <DependentUpon>UserControl_TabWelcome.xaml</DependentUpon>

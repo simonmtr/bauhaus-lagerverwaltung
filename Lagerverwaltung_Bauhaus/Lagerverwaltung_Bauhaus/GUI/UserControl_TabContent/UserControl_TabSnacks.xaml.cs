@@ -29,9 +29,9 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Snacks_Sweet_Click(object sender, RoutedEventArgs e)
         {
-            //Abfragen suessAbfrage = new Abfragen();
-            //var snackListe = suessAbfrage.getSuessSnacks();
-            //snacks_DataGrid.ItemsSource = snackListe;
+            Abfragen suessAbfrage = new Abfragen();
+            var snackListe = suessAbfrage.getSuessSnacks();
+            snacks_DataGrid.ItemsSource = snackListe;
 
             //using (var db = new Lagerbestand())
             //{
@@ -43,9 +43,9 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Snacks_Salt_Click(object sender, RoutedEventArgs e)
         {
-            //Abfragen salzAbfrage = new Abfragen();
-            //var snackListe = salzAbfrage.getSalzSnacks();
-            //snacks_DataGrid.ItemsSource = snackListe;
+            Abfragen salzAbfrage = new Abfragen();
+            var snackListe = salzAbfrage.getSalzSnacks();
+            snacks_DataGrid.ItemsSource = snackListe;
 
             //using (var db = new Lagerbestand())
             //{
