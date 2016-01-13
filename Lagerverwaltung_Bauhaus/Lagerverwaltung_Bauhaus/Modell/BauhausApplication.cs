@@ -7,7 +7,6 @@ using Lagerverwaltung_Bauhaus.Interfaces;
 using Lagerverwaltung_Bauhaus.Lagerhaltung;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks;
-using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 
 namespace Lagerverwaltung_Bauhaus.Modell
 {

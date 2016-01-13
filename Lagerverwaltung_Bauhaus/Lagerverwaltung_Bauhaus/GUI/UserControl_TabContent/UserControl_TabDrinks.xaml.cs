@@ -29,30 +29,60 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Drinks_fridge_Click(object sender, RoutedEventArgs e)
         {
-           Abfragen barAbfrage = new Abfragen();
-           var getraenkeListe = barAbfrage.getGesamtGetraenke();
-           Drinks_dataTableGrid.ItemsSource = getraenkeListe;
-           
+            Abfragen thekeAbfrage = new Abfragen();
+            var getraenkeListe = thekeAbfrage.getThekeGetraenke();
+            Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+
             //using (var db = new Lagerbestand())
             //{
-            // var query = from b in db.Getraenks select b;
+            //    var query = from b in db.Getraenks where b.enumLagerort == ENUMLagerort.Lagerort.Theke select b;
 
-            //    Drinks_dataTableGrid.ItemsSource =    query.ToList()    ;
+            //    Drinks_dataTableGrid.ItemsSource = query.ToList();
             //}
         }
 
         private void button_Drinks_bar_Click(object sender, RoutedEventArgs e)
         {
-            //Drinks_dataTableGrid.Ite
+            Abfragen barAbfragen = new Abfragen();
+            var getraenkeListe = barAbfragen.getBarGetraenke();
+            Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+
+            //    using (var db = new Lagerbestand())
+            //    {
+            //        var query = from b in db.Getraenks where b.enumLagerort == ENUMLagerort.Lagerort.Bar select b;
+            //        Drinks_dataTableGrid.ItemsSource = query.ToList();
+            //    }
         }
 
         private void button_Drinks_stock_Click(object sender, RoutedEventArgs e)
         {
+            Abfragen lagerAbfragen = new Abfragen();
+            var getraenkeListe = lagerAbfragen.getLagerGetraenke();
+                Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+
+            //using (var db = new Lagerbestand())
+            //{
+            //    var query = from b in db.Getraenks where b.enumLagerort == ENUMLagerort.Lagerort.Lager select b;
+            //    Drinks_dataTableGrid.ItemsSource = query.ToList();
+            //}
+
+
+
 
         }
 
         private void button_Drinks_total_Click(object sender, RoutedEventArgs e)
         {
+            Abfragen gesamtAbfrage = new Abfragen();
+            var getraenkeListe = gesamtAbfrage.getGesamtGetraenke();
+            Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+
+            //using (var db = new Lagerbestand())
+            //{
+            //    var query = from b in db.Getraenks select b;
+
+            //    Drinks_dataTableGrid.ItemsSource = query.ToList();
+            //}
 
         }
     }
