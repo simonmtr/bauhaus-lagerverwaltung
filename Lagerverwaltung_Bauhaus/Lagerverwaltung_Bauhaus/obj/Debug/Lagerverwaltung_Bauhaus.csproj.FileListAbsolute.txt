@@ -235,3 +235,6 @@ C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debu
 C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.Properties.Resources.resources
 C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.csproj.GenerateResource.Cache
 C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
+C:\Users\Simon\Desktop\aktuelllllll\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe.config
+C:\Users\Simon\Desktop\aktuelllllll\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
+C:\Users\Simon\Desktop\aktuelllllll\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.pdb

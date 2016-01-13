@@ -35,7 +35,7 @@ namespace Lagerverwaltung_Bauhaus
             String tasteDelete = comboBox_Remove_taste.SelectionBoxItem as String;
 
             Abfragen loeschenSnacks = new Abfragen();
-            loeschenSnacks.snackAusDbLoeschen(snackArtDelete, snackAmountDelete, sStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
+            loeschenSnacks.snackAusDbLoeschen(snackAmountDelete, tasteDelete, saltyDelete, snackArtDelete, sStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
         }
 
         private void button_Remove_Decrease_Drink_Click(object sender, RoutedEventArgs e)
@@ -48,18 +48,9 @@ namespace Lagerverwaltung_Bauhaus
             String dStorageLoc = comboBox_Remove_drinkStorageLocation.SelectionBoxItem as String;
 
             Abfragen loeschenDrinks = new Abfragen();
-            loeschenDrinks.getraenkAusDbLoeschen(brandDelete, drinkAmountDelete, dStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
+            loeschenDrinks.getraenkAusDbLoeschen(bSizeDelete, alcoholDelete, drinkAmountDelete, brandDelete, artDelete, dStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
 
         }
 
-
-
-        //private void button_Remove_Decrease_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //    String delete = comboBox_Remove_Art.SelectionBoxItem as String;
-        //    Abfragen BhApp = new Abfragen();
-        //    BhApp.getraenkAusDbLoeschen(delete);
-        //}
     }
 }
