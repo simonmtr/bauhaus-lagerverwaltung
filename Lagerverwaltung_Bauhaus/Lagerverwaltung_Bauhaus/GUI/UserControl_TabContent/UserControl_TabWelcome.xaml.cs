@@ -1,7 +1,5 @@
-﻿using Lagerverwaltung_Bauhaus.Lagerhaltung;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +23,6 @@ namespace Lagerverwaltung_Bauhaus
         public UserControl_TabWelcome()
         {
             InitializeComponent();
-            //Database.SetInitializer<Lagerbestand>(null);
         }
     }
 }

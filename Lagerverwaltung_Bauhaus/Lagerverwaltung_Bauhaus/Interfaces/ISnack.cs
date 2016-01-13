@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 
 namespace Lagerverwaltung_Bauhaus.Interfaces
 {

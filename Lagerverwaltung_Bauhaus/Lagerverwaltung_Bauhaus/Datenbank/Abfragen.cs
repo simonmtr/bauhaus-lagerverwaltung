@@ -17,120 +17,61 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    
-                    var query = from b in db.Snackss where b.IstSalzig == false select b;
-                    return query.ToList();
-                    
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine süßen Snacks.");
-                    return null;
-                }
-               
+                var query = from b in db.Snackss where b.istSalzig == true select b;
+                return query.ToList();
             }
         }
         public List<Snacks> getSalzSnacks()
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    var query = from b in db.Snackss where b.IstSalzig == true select b;
-                    return query.ToList();
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine salzigen Snacks.");
-                    return null;
-                }
-                
+                var query = from b in db.Snackss where b.istSalzig == false select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getLagerGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    var query = from b in db.Getraenks where b.Lagerort.Equals("Lager") select b;
-                    return query.ToList();
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke im Lager.");
-                    return null;
-                }
-                
+                var query = from b in db.Getraenks where b.lagerort.Equals("Lager") select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getBarGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    var query = from b in db.Getraenks where b.Lagerort.Equals("Bar") select b;
-                    return query.ToList();
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke in der Bar.");
-                    return null;
-                }
-                
+                var query = from b in db.Getraenks where b.lagerort.Equals("Bar") select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getThekeGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    var query = from b in db.Getraenks where b.Lagerort.Equals("Theke") select b;
-                    return query.ToList();
-                }catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke im Kühlschrank.");
-                    return null;
-                }
-                
+                var query = from b in db.Getraenks where b.lagerort.Equals("Theke") select b;
+                return query.ToList();
             }
         }
         public List<Getraenk> getGesamtGetraenke()
         {
             using (var db = new Lagerbestand())
             {
-                try
-                {
-                    var query = from b in db.Getraenks select b;
-                    return query.ToList();
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke.");
-                    return null;
-                }
-               
+                var query = from b in db.Getraenks select b;
+                return query.ToList();
             }
         }
 
 
-        public void getraenkAusDbLoeschen(string getraenkeName, string anzahl, string lagerort)
+        public void getraenkAusDbLoeschen(string getraenkeName)
         {
             using (var db = new Lagerbestand())
             {
                 try
                 {
-                    var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                   
+
+                    var query = from b in db.Getraenks where b.getraenkeName.Equals(getraenkeName) select b;
                     foreach (var b in query)
                     {
                         db.Getraenks.Remove(b);
@@ -138,20 +79,23 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
 
                     db.SaveChanges();
                 }
+                catch (EntryPointNotFoundException e)
+                {
+                    MessageBox.Show("Dieser Eintrag existiert nicht.");
+                }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Das Getränk konnte nicht gelöscht werden.");
+                    MessageBox.Show("Es ist ein Fehler aufgetreten.");
                 }
             }
         }
-        public void snackAusDbLoeschen(string snackName, string anzahl, string lagerort)
+        public void snackAusDbLoeschen(string snackName)
         {
             using (var db = new Lagerbestand())
             {
                 try
                 {
-                    var query = from b in db.Snackss where b.SnackName.Equals(snackName) select b;
+                    var query = from b in db.Snackss where b.snackName.Equals(snackName) select b;
                   
                     foreach (var a in query)
                     {
@@ -159,71 +103,84 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     }
                     db.SaveChanges();
                 }
+                catch (EntryPointNotFoundException e)
+                {
+                    MessageBox.Show("Dieser Eintrag existiert nicht.");
+                }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Der Snack konnte nicht gelöscht werden.");
+                    MessageBox.Show("Es ist ein Fehler aufgetreten.");
                 }
             }
         }
 
-        public void getraenkZuDbHinzufuegen(string fuellmenge, string alkohol, string anzahl, string getraenkeName, string getraenkeArt,string lagerort)
+        public void getraenkZuDbHinzufuegen(double fuellmenge, string alkohol, int anzahl, string getraenkeName, string getraenkeArt,string lagerort)
         {
-            DatenbankChecks stringToX = new DatenbankChecks();
             using (var db = new Lagerbestand())
             {
 
-                
+                var query = from b in db.Getraenks where b.getraenkeName == getraenkeName select b;
                 try
                 {
-                    var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
                     int aktAnzahl = query.First().anzahl;
-                    aktAnzahl = aktAnzahl = aktAnzahl + stringToX.stringToAnzahl(anzahl); 
+                    aktAnzahl = aktAnzahl + anzahl;
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception caught.", e);
+                    
                 }
-
-                var getraenk = new Getraenk
+                if (alkohol.Equals("Ja"))
                 {
-                    Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                        Alkohol = stringToX.stringToBool(alkohol),
-                        Anzahl = stringToX.stringToAnzahl(anzahl),
+                    var getraenk1 = new Getraenk
+                    {
+                        Fuellmenge = fuellmenge,
+                        Alkohol = true,
+                        Anzahl = anzahl,
                         GetraenkeName = getraenkeName,
-                        GetraenkeArt = getraenkeArt,
-                        Lagerort = lagerort
+                        getraenkeArt = getraenkeArt,
+                        lagerort = lagerort
                     };
-                db.Getraenks.Add(getraenk);
+                    db.Getraenks.Add(getraenk1);
+                }
+                else
+                {
+                    var getraenk = new Getraenk
+                    {
+                        Fuellmenge = fuellmenge,
+                        Alkohol = false,
+                        Anzahl = anzahl,
+                        GetraenkeName = getraenkeName,
+                        getraenkeArt = getraenkeArt,
+                        lagerort = lagerort
+                    };
+                    db.Getraenks.Add(getraenk);
+                }
                 db.SaveChanges();
             }
         }
 
-        public void snackZuDbHinzufuegen(string anzahl, string snackName, string istSalzig, string snackArt, string lagerort)
+        public void snackZuDbHinzufuegen(int anzahl, string snackName, bool istSalzig, string snackArt, string lagerort)
         {
-            DatenbankChecks stringToX = new DatenbankChecks();
             using (var db = new Lagerbestand())
             {
 
-                var query = from b in db.Snackss where b.SnackName.Equals(snackName) select b;
+                var query = from b in db.Snackss where b.snackName == snackName select b;
                 try
                 {
-                    int aktAnzahl = query.First().Anzahl;
-                    aktAnzahl = aktAnzahl + stringToX.stringToAnzahl(anzahl);
+                    int aktAnzahl = query.First().anzahl;
+                    aktAnzahl = aktAnzahl + anzahl;
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Der Snack konnte nicht hinzugeügt werden.");
+
                 }
-                
                 var snack = new Snacks
                 {
-                    Anzahl = stringToX.stringToAnzahl(anzahl),
+                    Anzahl = anzahl,
                     SnackName = snackName,
-                    IstSalzig = stringToX.stringToBool(istSalzig),
+                    IstSalzig = istSalzig,
                     SnackArt=snackArt,
-                    Lagerort = lagerort
+                    lagerort = lagerort
 
                 };
                 db.Snackss.Add(snack);

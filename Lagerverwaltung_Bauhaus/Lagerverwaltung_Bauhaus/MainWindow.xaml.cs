@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Lagerverwaltung_Bauhaus.Factory;
 using Lagerverwaltung_Bauhaus.Modell;
+using Lagerverwaltung_Bauhaus.Lagerhaltung.Orte;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 
 namespace Lagerverwaltung_Bauhaus
