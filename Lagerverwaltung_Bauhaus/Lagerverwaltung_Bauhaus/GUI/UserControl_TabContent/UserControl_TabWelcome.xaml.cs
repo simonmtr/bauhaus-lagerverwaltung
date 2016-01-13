@@ -37,16 +37,19 @@ namespace Lagerverwaltung_Bauhaus
             //}
             //else if (result == DialogResult.No)
 
+            //MessageBox.Show("Datenbank gelöscht");
+            //Database.SetInitializer(new DropCreateDatabaseAlways<Lagerbestand>()); <- die 2 zeilen hier funktionieren
 
-            var result = MessageBox.Show("DB wirklich löschen?", "caption", MessageBoxButton.OKCancel, MessageBoxImage.Question);
 
-            if (result == MessageBoxResult.Yes)
+           // MessageBox.Show("Achtung! Bei Programmstart wird die Datenbank zurückgesetzt! Wirklich fortfahren?", "!!!! ACHTUNG !!!!", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+
+            if (MessageBox.Show("DB wirklich löschen?", "!!!! ACHTUNG !!!!", MessageBoxButton.OKCancel)== MessageBoxResult.OK)
             {
-                Database.SetInitializer<Lagerbestand>(null);
-
+                Database.SetInitializer(new DropCreateDatabaseAlways<Lagerbestand>()); 
+                MessageBox.Show("Die Datenbank wurde zurückgesetzt. ");
             }
 
-            else if (result == MessageBoxResult.Cancel)
+            else if ((MessageBox.Show("Der Vorgang wurde abgebrochen.", "Abbruch", MessageBoxButton.OKCancel) == MessageBoxResult.Cancel))
             {
 
                 MessageBox.Show("Operation abgebrochen");
