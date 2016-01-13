@@ -136,61 +136,61 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 {
                     var query1 = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
                     int aktAnzahl = query1.First().Anzahl;
+                    int vorhergesagteAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
-                    try
+                    if (vorhergesagteAnzahl < 0)
                     {
-                        var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
-                        foreach (var a in query)
+                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.");
+                    }
+                    else
+                    {
+                        if (vorhergesagteAnzahl <= 0)
                         {
-                            db.Getraenks.Remove(a);
+                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                            foreach (var a in query)
+                            {
+                                db.Getraenks.Remove(a);
+                            }
+                            db.SaveChanges();
+                        }
+                        else
+                        {
+                            try
+                            {
+                                var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                                foreach (var a in query)
+                                {
+                                    db.Getraenks.Remove(a);
+                                }
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine("Exception caught.", e);
+                            }
+
+                            var getraenk1 = new Getraenk
+                            {
+                                Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
+                                Alkohol = stringToX.stringToBool(alkohol),
+                                Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
+                                GetraenkeName = getraenkeName,
+                                GetraenkeArt = getraenkeArt,
+                                Lagerort = lagerort
+                            };
+                            MessageBox.Show("Das Getränk wurde erfolgreich gelöscht.");
+
+                            db.Getraenks.Add(getraenk1);
+                            db.SaveChanges();
                         }
                     }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine("Exception caught.", e);
-                    }
-
-                    var getraenk1 = new Getraenk
-                    {
-                        Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                        Alkohol = stringToX.stringToBool(alkohol),
-                        Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                        GetraenkeName = getraenkeName,
-                        GetraenkeArt = getraenkeArt,
-                        Lagerort = lagerort
-                    };
-
-                    db.Getraenks.Add(getraenk1);
-                    db.SaveChanges();
+                    
+                    
 
                 }
                 catch
                 {
-                    try
-                    {
-                        var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
-                        foreach (var a in query)
-                        {
-                            db.Getraenks.Remove(a);
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine("Exception caught.", e);
-                    }
+                    MessageBox.Show("Es kann kein Getraenk entfernt werden dass es nicht gibt.");
 
-                    var getraenk = new Getraenk
-                    {
-                        Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                        Alkohol = stringToX.stringToBool(alkohol),
-                        Anzahl = stringToX.stringToAnzahl(anzahl),
-                        GetraenkeName = getraenkeName,
-                        GetraenkeArt = getraenkeArt,
-                        Lagerort = lagerort
-                    };
-                    db.Getraenks.Add(getraenk);
-                    MessageBox.Show("Das Getränk wurde gelöscht.");
-                    db.SaveChanges();
                 }
             }
         }
@@ -203,60 +203,61 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 {
                     var query1 = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
                     int aktAnzahl = query1.First().Anzahl;
+                    int vorhergesagteAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
-                    try
+                    if (vorhergesagteAnzahl < 0)
                     {
-                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
-                        foreach (var a in query)
+                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.");
+                    }
+                    else
+                    {
+                        if (vorhergesagteAnzahl <= 0)
                         {
-                            db.Snackss.Remove(a);
+                            var query = from b in db.Snackss where b.SnackName.Equals(snackName) select b;
+                            foreach (var a in query)
+                            {
+                                db.Snackss.Remove(a);
+                            }
+                            db.SaveChanges();
                         }
+                        else
+                        {
+                            try
+                            {
+                                var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                                foreach (var a in query)
+                                {
+                                    db.Snackss.Remove(a);
+                                }
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine("Exception caught.", e);
+                            }
+
+                            var snack1 = new Snacks
+                            {
+
+                                Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
+                                SnackName = snackName,
+                                IstSalzig = stringToX.stringToBool(istSalzig),
+                                SnackArt = snackArt,
+                                Lagerort = lagerort
+                            };
+                            MessageBox.Show("Der Snack wurde erfolgreich gelöscht.");
+                            db.Snackss.Add(snack1);
+                            db.SaveChanges();
+                        }
+
                     }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine("Exception caught.", e);
-                    }
 
-                    var snack1 = new Snacks
-                    {
 
-                        Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                        SnackName = snackName,
-                        IstSalzig = stringToX.stringToBool(istSalzig),
-                        SnackArt = snackArt,
-                        Lagerort = lagerort
-                    };
-
-                    db.Snackss.Add(snack1);
-                    db.SaveChanges();
+                        
 
                 }
                 catch
                 {
-                    try
-                    {
-                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
-                        foreach (var a in query)
-                        {
-                            db.Snackss.Remove(a);
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine("Exception caught.", e);
-                    }
-
-                    var snack = new Snacks
-                    {
-                        Anzahl = stringToX.stringToAnzahl(anzahl),
-                        SnackName = snackName,
-                        IstSalzig = stringToX.stringToBool(istSalzig),
-                        SnackArt = snackArt,
-                        Lagerort = lagerort
-                    };
-                    db.Snackss.Add(snack);
-                    MessageBox.Show("Der Snack wurde gelöscht.");
-                    db.SaveChanges();
+                    MessageBox.Show("Es kann kein Snack entfernt werden dass es nicht gibt.");
                 }
             }
         }

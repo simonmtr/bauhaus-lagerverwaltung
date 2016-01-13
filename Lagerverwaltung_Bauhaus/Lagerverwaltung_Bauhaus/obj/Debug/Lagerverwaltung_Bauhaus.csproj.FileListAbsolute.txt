@@ -266,3 +266,10 @@ C:\Users\Simon\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug
 C:\Users\Simon\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Simon\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.xml
 C:\Users\Simon\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.pdb
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.dll
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.xml
+C:\Users\Simon\Documents\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\EntityFramework.SqlServer.xml
