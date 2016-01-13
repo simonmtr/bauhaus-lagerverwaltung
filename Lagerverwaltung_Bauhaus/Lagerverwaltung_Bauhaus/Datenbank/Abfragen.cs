@@ -134,7 +134,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
 
                 try
                 {
-                    var query1 = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                    var query1 = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName)&&b.Lagerort.Equals(lagerort) select b;
                     int aktAnzahl = query1.First().Anzahl;
                     int vorhergesagteAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
@@ -146,7 +146,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     {
                         if (vorhergesagteAnzahl <= 0)
                         {
-                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort)  select b;
                             foreach (var a in query)
                             {
                                 db.Getraenks.Remove(a);
@@ -157,7 +157,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         {
                             try
                             {
-                                var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                                var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort) select b;
                                 foreach (var a in query)
                                 {
                                     db.Getraenks.Remove(a);
@@ -177,11 +177,12 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                                 GetraenkeArt = getraenkeArt,
                                 Lagerort = lagerort
                             };
-                            MessageBox.Show("Das Getränk wurde erfolgreich gelöscht.");
+                            
 
                             db.Getraenks.Add(getraenk1);
                             db.SaveChanges();
                         }
+                        MessageBox.Show("Das Getränk wurde erfolgreich gelöscht.");
                     }
                     
                     
@@ -201,7 +202,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
             {
                 try
                 {
-                    var query1 = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                    var query1 = from b in db.Snackss where b.SnackArt.Equals(snackArt) && b.Lagerort.Equals(lagerort)  select b;
                     int aktAnzahl = query1.First().Anzahl;
                     int vorhergesagteAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
@@ -213,7 +214,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     {
                         if (vorhergesagteAnzahl <= 0)
                         {
-                            var query = from b in db.Snackss where b.SnackName.Equals(snackName) select b;
+                            var query = from b in db.Snackss where b.SnackName.Equals(snackName) && b.Lagerort.Equals(lagerort)  select b;
                             foreach (var a in query)
                             {
                                 db.Snackss.Remove(a);
@@ -224,7 +225,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         {
                             try
                             {
-                                var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                                var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) && b.Lagerort.Equals(lagerort)  select b;
                                 foreach (var a in query)
                                 {
                                     db.Snackss.Remove(a);
@@ -244,10 +245,11 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                                 SnackArt = snackArt,
                                 Lagerort = lagerort
                             };
-                            MessageBox.Show("Der Snack wurde erfolgreich gelöscht.");
+                            
                             db.Snackss.Add(snack1);
                             db.SaveChanges();
                         }
+                        MessageBox.Show("Der Snack wurde erfolgreich gelöscht.");
 
                     }
 
@@ -271,12 +273,12 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 
                     try
                     {
-                        var query1 = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                        var query1 = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort) select b;
                         int aktAnzahl = query1.First().Anzahl;
                         aktAnzahl = aktAnzahl + stringToX.stringToAnzahl(anzahl);
                         try
                         {
-                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort)  select b;
                             foreach (var a in query)
                             {
                                 db.Getraenks.Remove(a);
@@ -297,7 +299,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     {
                         try
                         {
-                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) select b;
+                            var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort) select b;
                             foreach (var a in query)
                             {
                                 db.Getraenks.Remove(a);
@@ -330,12 +332,12 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
             {
                 try
                 {
-                    var query1 = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                    var query1 = from b in db.Snackss where b.SnackArt.Equals(snackArt) && b.Lagerort.Equals(lagerort) select b;
                     int aktAnzahl = query1.First().Anzahl;
                     aktAnzahl = aktAnzahl + stringToX.stringToAnzahl(anzahl);
                     try
                     {
-                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) && b.Lagerort.Equals(lagerort) select b;
                         foreach (var a in query)
                         {
                             db.Snackss.Remove(a);
@@ -358,7 +360,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 {
                     try
                     {
-                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) select b;
+                        var query = from b in db.Snackss where b.SnackArt.Equals(snackArt) && b.Lagerort.Equals(lagerort) select b;
                         foreach (var a in query)
                         {
                             db.Snackss.Remove(a);
