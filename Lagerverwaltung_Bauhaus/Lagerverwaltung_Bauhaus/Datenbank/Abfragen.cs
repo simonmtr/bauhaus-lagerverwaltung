@@ -287,16 +287,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             Console.WriteLine("Exception caught.", e);
                         }
 
-                        var getraenk1 = new Getraenk
-                        {
-                            Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                            Alkohol = stringToX.stringToBool(alkohol),
-                            Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                            GetraenkeName = getraenkeName,
-                            GetraenkeArt = getraenkeArt,
-                            Lagerort = lagerort
-                        };
-
+                    var getraenk1 = stringToX.welchesGetraenk(fuellmenge, alkohol, aktAnzahl.ToString(), getraenkeName, getraenkeArt, lagerort);
                         db.Getraenks.Add(getraenk1);
                     MessageBox.Show("Das Getränk wurde hinzugefügt.");
                     db.SaveChanges();
@@ -317,16 +308,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             Console.WriteLine("Exception caught.", e);
                         }
 
-                        var getraenk = new Getraenk
-                        {
-                            Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                            Alkohol = stringToX.stringToBool(alkohol),
-                            Anzahl = stringToX.stringToAnzahl(anzahl),
-                            GetraenkeName = getraenkeName,
-                            GetraenkeArt = getraenkeArt,
-                            Lagerort = lagerort
-                        };
-                        db.Getraenks.Add(getraenk);
+                    var getraenk = stringToX.welchesGetraenk(fuellmenge, alkohol, anzahl, getraenkeName, getraenkeArt, lagerort);
+                    db.Getraenks.Add(getraenk);
                     MessageBox.Show("Das Getränk wurde hinzugefügt.");
                     db.SaveChanges();
                     }
@@ -363,15 +346,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         Console.WriteLine("Exception caught.", e);
                     }
 
-                    var snack1 = new Snacks
-                    {
-
-                        Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                        SnackName = snackName,
-                        IstSalzig = stringToX.stringToBool(istSalzig),
-                        SnackArt = snackArt,
-                        Lagerort = lagerort
-                    };
+                    var snack1 = stringToX.welcherSnack(aktAnzahl.ToString(), snackName, istSalzig, snackArt, lagerort);
+                    
 
                     db.Snackss.Add(snack1);
                     MessageBox.Show("Der Snack wurde hinzugefügt.");
@@ -393,14 +369,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         Console.WriteLine("Exception caught.", e);
                     }
 
-                    var snack = new Snacks
-                    {
-                        Anzahl = stringToX.stringToAnzahl(anzahl),
-                        SnackName = snackName,
-                        IstSalzig = stringToX.stringToBool(istSalzig),
-                        SnackArt = snackArt,
-                        Lagerort = lagerort
-                    };
+                    var snack = stringToX.welcherSnack(anzahl,  snackName,  istSalzig,  snackArt,  lagerort);
+
                     db.Snackss.Add(snack);
                     MessageBox.Show("Der Snack wurde hinzugefügt.");
                     db.SaveChanges();
