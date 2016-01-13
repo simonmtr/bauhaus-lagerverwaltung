@@ -61,7 +61,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         GetraenkeArt = getraenkeArt,
                         Lagerort = lagerort
                     };
-                case"Schnaps":
+                case"Spirituosen":
                     return new Schnaps()
                     {
                         Fuellmenge = stringToFuellmenge(fuellmenge),
