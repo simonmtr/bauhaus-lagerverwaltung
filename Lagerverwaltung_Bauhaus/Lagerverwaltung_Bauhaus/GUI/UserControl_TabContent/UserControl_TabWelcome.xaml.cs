@@ -27,5 +27,31 @@ namespace Lagerverwaltung_Bauhaus
             InitializeComponent();
             //Database.SetInitializer<Lagerbestand>(null);
         }
+
+        private void DB_Kill_Click(object sender, RoutedEventArgs e)
+        {
+            //DialogResult result = MessageBox.Show("Do you want to save changes?", "Confirmation", MessageBoxButtons.YesNoCancel);
+            //if (result == DialogResult.Yes)
+            //{
+            //    //...
+            //}
+            //else if (result == DialogResult.No)
+
+
+            var result = MessageBox.Show("DB wirklich löschen?", "caption", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+
+            if (result == MessageBoxResult.Yes)
+            {
+                Database.SetInitializer<Lagerbestand>(null);
+
+            }
+
+            else if (result == MessageBoxResult.Cancel)
+            {
+
+                MessageBox.Show("Operation abgebrochen");
+
+            }
+        }
     }
 }

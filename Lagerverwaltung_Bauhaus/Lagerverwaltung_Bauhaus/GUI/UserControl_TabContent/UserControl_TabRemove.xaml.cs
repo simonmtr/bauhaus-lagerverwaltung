@@ -28,7 +28,7 @@ namespace Lagerverwaltung_Bauhaus
 
         private void button_Remove_Decrease_Snack_Click(object sender, RoutedEventArgs e)
         {
-           String saltyDelete = comboBox_Remove_saltySweet.SelectionBoxItem as String;
+            String saltyDelete = comboBox_Remove_saltySweet.SelectionBoxItem as String;
             String snackAmountDelete = comboBox_Remove_snackAmount.SelectionBoxItem as String;
             String snackArtDelete = comboBox_Remove_snackArt.SelectionBoxItem as String;
             String sStorageLoc = comboBox_Remove_snackStorage.SelectionBoxItem as String;

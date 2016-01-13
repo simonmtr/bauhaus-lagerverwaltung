@@ -9,5 +9,6 @@
 
     <Grid x:Name="Welcome_Grid">
         <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_Wilkommen_jpg" Source="/Ressourcen/Bilder/Bauhaus_Wilkommen.jpg" Stretch="Fill"/>
+        <Button x:Name="DB_Kill" Content="DB-Kill" Width="60" Height="20" BorderBrush="#FFCC0001" Background="#FFCC0001" Foreground="#FFCC0001" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="DB_Kill_Click"   />
     </Grid>
 </UserControl>

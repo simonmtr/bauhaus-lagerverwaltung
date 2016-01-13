@@ -54,8 +54,8 @@
             </Grid.ColumnDefinitions>
 
 
-            <Button Grid.Column="1" Grid.Row="1" x:Name="button_Drinks_fridge" Content="Bar" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" HorizontalAlignment="Left" Margin="0,0,0,38" Grid.RowSpan="2" Click="button_Drinks_fridge_Click"/>
-            <Button Grid.Column="3" Grid.Row="1" x:Name="button_Drinks_bar" Content="Theke" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" Click="button_Drinks_bar_Click"/>
+            <Button Grid.Column="1" Grid.Row="1" x:Name="button_Drinks_fridge" Content="Kühlschrank" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" HorizontalAlignment="Left" Margin="0,0,0,38" Grid.RowSpan="2" Click="button_Drinks_fridge_Click"/>
+            <Button Grid.Column="3" Grid.Row="1" x:Name="button_Drinks_bar" Content="Bar" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" Click="button_Drinks_bar_Click"/>
             <Button Grid.Column="5" Grid.Row="1" x:Name="button_Drinks_stock" Content="Lager" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" Click="button_Drinks_stock_Click"/>
             <Button Grid.Column="7" Grid.Row="1" x:Name="button_Drinks_total" Content="Gesamt" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" Click="button_Drinks_total_Click"/>
         </Grid>

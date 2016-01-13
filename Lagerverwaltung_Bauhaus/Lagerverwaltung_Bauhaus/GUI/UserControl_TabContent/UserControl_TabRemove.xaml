@@ -51,7 +51,7 @@
 
             <Label x:Name="Label_Remove_Art" Content="Art" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_drinkArt"  Grid.Row="2" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
-                <ComboBoxItem Content="Bier" HorizontalAlignment="Left"/>
+                <ComboBoxItem Content="Bier" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="Wein" HorizontalAlignment="Left"/>
                 <ComboBoxItem Content="Spirituosen" HorizontalAlignment="Left"/>
                 <ComboBoxItem Content="Saft" HorizontalAlignment="Left" />
@@ -62,7 +62,7 @@
 
             <Label x:Name="Label_Remove_Marke" Content="Marke" Grid.Row="3" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_Brand" Grid.Row="4" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001" >
-                <ComboBoxItem Content="Augustiner Helles" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Augustiner Helles" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="Tegernseeer Helles" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Franziskaner Weißbier" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Franziskaner leichtes Weißbier" HorizontalAlignment="Left" />
@@ -84,7 +84,7 @@
 
             <Label x:Name="Label_Remove_Amount" Content="Menge" Grid.Row="5" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_drinkAmount" Grid.Row="6" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
-                <ComboBoxItem Content="1" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="1" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="2" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="3" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="4" HorizontalAlignment="Left" />
@@ -99,14 +99,14 @@
             <!--Linke Seite 2-->
             <Label x:Name="Label_Remove_alcohol" Content="alkoholisch ?" Grid.Column="1" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_alcohol" Grid.Column="1" Grid.Row="2" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001" >
-                <ComboBoxItem Content="Ja" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Ja" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="Nein" HorizontalAlignment="Left" />
             </ComboBox>
 
             <Label x:Name="Label_Remove_bottleSize" Content="Flaschengröße" Grid.Column="1" Grid.Row="3" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_bottleSize" Grid.Column="1" Grid.Row="4" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001" >
                 <ComboBoxItem Content="0.3" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="0.5" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="0.5" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="0.7" HorizontalAlignment="Left" />
             </ComboBox>
 
@@ -114,14 +114,14 @@
             <ComboBox x:Name="comboBox_Remove_drinkStorageLocation" Grid.Column="1" Grid.Row="6" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
                 <ComboBoxItem Content="Theke" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Bar" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="Lager" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Lager" HorizontalAlignment="Left" IsSelected="True" />
             </ComboBox>
 
             <!--Rechte Seite 1-->
             <Label x:Name="Label_Remove_snacksTitle" Content="Snack Auswahl :" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="0" FontFamily="Tekton Pro" FontSize="30" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
             <Label x:Name="Label_Remove_saltySweet" Content="Salzig?" Grid.Column="2" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_saltySweet" Grid.Column="2" Grid.Row="2" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
-                <ComboBoxItem Content="Ja" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Ja" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="Nein" HorizontalAlignment="Left" />
             </ComboBox>
 
@@ -131,12 +131,12 @@
                 <ComboBoxItem Content="Erdnüsse" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Salzstangen" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Erdnussflips" HorizontalAlignment="Left" />
-                <ComboBoxItem Content="Chips" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Chips" HorizontalAlignment="Left" IsSelected="True" />
             </ComboBox>
 
             <Label x:Name="Label_Remove_taste" Content="Geschmack" Grid.Column="2" Grid.Row="5" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_taste" Grid.Column="2" Grid.Row="6" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
-                <ComboBoxItem Content="Paprika" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Paprika" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="natur" HorizontalAlignment="Left" />
             </ComboBox>
 
@@ -145,7 +145,7 @@
 
             <Label x:Name="Label_Remove_snackAmount" Content="Anzahl" Grid.Column="3" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_snackAmount" Grid.Column="3" Grid.Row="2" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001" >
-                <ComboBoxItem Content="1" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="1" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="2" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="3" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="4" HorizontalAlignment="Left" />
@@ -160,7 +160,7 @@
 
             <Label x:Name="Label_Remove_snackStorage" Content="Lagerort" Grid.Column="3" Grid.Row="3" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_snackStorage" Grid.Column="3" Grid.Row="4" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001" >
-                <ComboBoxItem Content="Bar" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Bar" HorizontalAlignment="Left" IsSelected="True" />
                 <ComboBoxItem Content="Lager" HorizontalAlignment="Left" />
             </ComboBox>
 

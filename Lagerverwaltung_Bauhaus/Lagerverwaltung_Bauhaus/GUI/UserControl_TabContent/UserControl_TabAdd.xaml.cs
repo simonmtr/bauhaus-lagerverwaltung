@@ -49,7 +49,7 @@ namespace Lagerverwaltung_Bauhaus
 
             Abfragen auswahlGetraenke = new Abfragen();
             auswahlGetraenke.getraenkZuDbHinzufuegen(bSizeInput, alcoholInput, drinkAmountInput, brandInput, artInput, dStorageLoc);
-            
+            MessageBox.Show("Getränke erfolgreich hinzugefügt");
         }
 
         private void button_Add_Increase_Snack_Click(object sender, RoutedEventArgs e)
@@ -62,7 +62,7 @@ namespace Lagerverwaltung_Bauhaus
 
             Abfragen auswahlSnacks = new Abfragen();
             auswahlSnacks.snackZuDbHinzufuegen(snackAmountInput, tasteInput, saltyInput, snackArtInput, sStorageLoc);//tasteInput statt name
-            
+            MessageBox.Show("Snacks erfolgreich hinzugefügt");
 
         }
     }

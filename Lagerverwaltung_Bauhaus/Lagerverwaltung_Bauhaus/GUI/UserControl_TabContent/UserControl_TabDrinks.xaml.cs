@@ -58,7 +58,7 @@ namespace Lagerverwaltung_Bauhaus
         {
             Abfragen lagerAbfragen = new Abfragen();
             var getraenkeListe = lagerAbfragen.getLagerGetraenke();
-                Drinks_dataTableGrid.ItemsSource = getraenkeListe;
+            Drinks_dataTableGrid.ItemsSource = getraenkeListe;
 
             //using (var db = new Lagerbestand())
             //{
