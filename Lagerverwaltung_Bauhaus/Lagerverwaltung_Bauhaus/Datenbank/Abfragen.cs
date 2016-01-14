@@ -7,6 +7,7 @@ using System.Windows;
 using Lagerverwaltung_Bauhaus.Lagerhaltung;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Getränke;
 using Lagerverwaltung_Bauhaus.Lagerhaltung.Produkte.Snacks;
+using Lagerverwaltung_Bauhaus.Factory;
 
 namespace Lagerverwaltung_Bauhaus.Datenbank
 {
@@ -128,7 +129,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
         public void getraenkAusDbLoeschen(string fuellmenge, string alkohol, string anzahl, string getraenkeName, string getraenkeArt, string lagerort)
         {
             DatenbankChecks stringToX = new DatenbankChecks();
-
+            ObjektverwaltungFactory obFac = new ObjektverwaltungFactory();
             using (var db = new Lagerbestand())
             {
 
@@ -144,7 +145,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     }
                     else
                     {
-                        if (vorhergesagteAnzahl <= 0)
+                        if (vorhergesagteAnzahl == 0)
                         {
                             var query = from b in db.Getraenks where b.GetraenkeName.Equals(getraenkeName) && b.Lagerort.Equals(lagerort)  select b;
                             foreach (var a in query)
@@ -168,16 +169,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                                 Console.WriteLine("Exception caught.", e);
                             }
 
-                            var getraenk1 = new Getraenk
-                            {
-                                Fuellmenge = stringToX.stringToFuellmenge(fuellmenge),
-                                Alkohol = stringToX.stringToBool(alkohol),
-                                Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                                GetraenkeName = getraenkeName,
-                                GetraenkeArt = getraenkeArt,
-                                Lagerort = lagerort
-                            };
-                            
+                            var getraenk1 = obFac.welchesGetraenk(fuellmenge, alkohol, aktAnzahl.ToString(), getraenkeName, getraenkeArt, lagerort);
+
 
                             db.Getraenks.Add(getraenk1);
                             db.SaveChanges();
@@ -198,6 +191,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
         public void snackAusDbLoeschen(string anzahl, string snackName, string istSalzig, string snackArt, string lagerort)
         {
             DatenbankChecks stringToX = new DatenbankChecks();
+            ObjektverwaltungFactory obFac = new ObjektverwaltungFactory();
             using (var db = new Lagerbestand())
             {
                 try
@@ -212,7 +206,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     }
                     else
                     {
-                        if (vorhergesagteAnzahl <= 0)
+                        if (vorhergesagteAnzahl == 0)
                         {
                             var query = from b in db.Snackss where b.SnackName.Equals(snackName) && b.Lagerort.Equals(lagerort)  select b;
                             foreach (var a in query)
@@ -236,17 +230,9 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                                 Console.WriteLine("Exception caught.", e);
                             }
 
-                            var snack1 = new Snacks
-                            {
+                            var snack = obFac.welcherSnack(aktAnzahl.ToString(), snackName, istSalzig, snackArt, lagerort);
 
-                                Anzahl = stringToX.stringToAnzahl(aktAnzahl.ToString()),
-                                SnackName = snackName,
-                                IstSalzig = stringToX.stringToBool(istSalzig),
-                                SnackArt = snackArt,
-                                Lagerort = lagerort
-                            };
-                            
-                            db.Snackss.Add(snack1);
+                            db.Snackss.Add(snack);
                             db.SaveChanges();
                         }
                         MessageBox.Show("Der Snack wurde erfolgreich gelöscht.");
@@ -268,6 +254,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
         public void getraenkZuDbHinzufuegen(string fuellmenge, string alkohol, string anzahl, string getraenkeName, string getraenkeArt, string lagerort)
         {
             DatenbankChecks stringToX = new DatenbankChecks();
+            ObjektverwaltungFactory obFac = new ObjektverwaltungFactory();
+
             using (var db = new Lagerbestand())
             {
                 
@@ -289,7 +277,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             Console.WriteLine("Exception caught.", e);
                         }
 
-                    var getraenk1 = stringToX.welchesGetraenk(fuellmenge, alkohol, aktAnzahl.ToString(), getraenkeName, getraenkeArt, lagerort);
+                    var getraenk1 = obFac.welchesGetraenk(fuellmenge, alkohol, aktAnzahl.ToString(), getraenkeName, getraenkeArt, lagerort);
                         db.Getraenks.Add(getraenk1);
                     MessageBox.Show("Das Getränk wurde hinzugefügt.");
                     db.SaveChanges();
@@ -310,7 +298,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             Console.WriteLine("Exception caught.", e);
                         }
 
-                    var getraenk = stringToX.welchesGetraenk(fuellmenge, alkohol, anzahl, getraenkeName, getraenkeArt, lagerort);
+                    var getraenk = obFac.welchesGetraenk(fuellmenge, alkohol, anzahl, getraenkeName, getraenkeArt, lagerort);
                     db.Getraenks.Add(getraenk);
                     MessageBox.Show("Das Getränk wurde hinzugefügt.");
                     db.SaveChanges();
@@ -328,6 +316,8 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
         public void snackZuDbHinzufuegen(string anzahl, string snackName, string istSalzig, string snackArt, string lagerort)
         {
             DatenbankChecks stringToX = new DatenbankChecks();
+            ObjektverwaltungFactory obFac = new ObjektverwaltungFactory();
+
             using (var db = new Lagerbestand())
             {
                 try
@@ -348,7 +338,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         Console.WriteLine("Exception caught.", e);
                     }
 
-                    var snack1 = stringToX.welcherSnack(aktAnzahl.ToString(), snackName, istSalzig, snackArt, lagerort);
+                    var snack1 = obFac.welcherSnack(aktAnzahl.ToString(), snackName, istSalzig, snackArt, lagerort);
                     
 
                     db.Snackss.Add(snack1);
@@ -371,7 +361,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                         Console.WriteLine("Exception caught.", e);
                     }
 
-                    var snack = stringToX.welcherSnack(anzahl,  snackName,  istSalzig,  snackArt,  lagerort);
+                    var snack = obFac.welcherSnack(anzahl,  snackName,  istSalzig,  snackArt,  lagerort);
 
                     db.Snackss.Add(snack);
                     MessageBox.Show("Der Snack wurde hinzugefügt.");
