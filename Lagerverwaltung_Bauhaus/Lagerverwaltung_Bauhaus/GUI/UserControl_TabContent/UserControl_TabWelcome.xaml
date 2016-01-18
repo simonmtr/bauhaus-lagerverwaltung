@@ -6,9 +6,10 @@
              xmlns:local="clr-namespace:Lagerverwaltung_Bauhaus"
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="900"  FontFamily="Tekton Pro" FontSize="20">
-
+        <!--Willkommens Fenster-->
     <Grid x:Name="Welcome_Grid">
-        <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_Wilkommen_jpg" Source="/Ressourcen/Bilder/Bauhaus_Wilkommen.jpg" Stretch="Fill"/>
+        <Image x:Name="GUI_LagerVerwaltungBauhaus_component_Pictures_Bauhaus_Wilkommen_jpg" Source="/Ressourcen/Bilder/Bauhaus_Willkommen.jpg" Stretch="Fill"/>
+       <!-- Button zum zurücksetzen der Datenbank (-verbindung) um eine neue zu erstellen, bei problemen , aber v.a. zu test zwecken.-->
         <Button x:Name="DB_Kill" Content="DB-Kill" Width="60" Height="20" BorderBrush="#FFCC0001" Background="#FFCC0001" Foreground="#FFCC0001" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="DB_Kill_Click"   />
     </Grid>
 </UserControl>

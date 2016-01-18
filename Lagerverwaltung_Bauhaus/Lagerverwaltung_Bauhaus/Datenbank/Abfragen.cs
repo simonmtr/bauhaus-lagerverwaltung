@@ -28,7 +28,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine süßen Snacks.");
+                    MessageBox.Show("Es gibt keine süßen Snacks.","Nicht vorhanden",MessageBoxButton.OK,MessageBoxImage.Error);
                     return null;
                 }
 
@@ -46,7 +46,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine salzigen Snacks.");
+                    MessageBox.Show("Es gibt keine salzigen Snacks.","Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
 
@@ -64,7 +64,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke im Lager.");
+                    MessageBox.Show("Es gibt keine Getränke im Lager.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
 
@@ -82,7 +82,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke in der Bar.");
+                    MessageBox.Show("Es gibt keine Getränke in der Bar.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
 
@@ -100,7 +100,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke im Kühlschrank.");
+                    MessageBox.Show("Es gibt keine Getränke im Kühlschrank.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
 
@@ -118,7 +118,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception caught.", e);
-                    MessageBox.Show("Es gibt keine Getränke.");
+                    MessageBox.Show("Es gibt keine Getränke.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     return null;
                 }
 
@@ -141,7 +141,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     if (vorhergesagteAnzahl < 0)
                     {
-                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.");
+                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                     else
                     {
@@ -175,7 +175,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             db.Getraenks.Add(getraenk1);
                             db.SaveChanges();
                         }
-                        MessageBox.Show("Das Getränk wurde erfolgreich gelöscht.");
+                        MessageBox.Show("Das Getränk wurde erfolgreich gelöscht.","INFO",MessageBoxButton.OK,MessageBoxImage.Information);
                     }
                     
                     
@@ -183,7 +183,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch
                 {
-                    MessageBox.Show("Es kann kein Getraenk entfernt werden dass es nicht gibt.");
+                    MessageBox.Show("Es kann kein Getraenk entfernt werden dass es nicht gibt.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
 
                 }
             }
@@ -202,7 +202,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     aktAnzahl = aktAnzahl - stringToX.stringToAnzahl(anzahl);
                     if (vorhergesagteAnzahl < 0)
                     {
-                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.");
+                        MessageBox.Show("Sie haben nicht so viele Getränke auf Lager wie gelöscht werden sollen.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
                     else
                     {
@@ -235,7 +235,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                             db.Snackss.Add(snack);
                             db.SaveChanges();
                         }
-                        MessageBox.Show("Der Snack wurde erfolgreich gelöscht.");
+                        MessageBox.Show("Der Snack wurde erfolgreich gelöscht.", "INFO", MessageBoxButton.OK, MessageBoxImage.Information);
 
                     }
 
@@ -245,7 +245,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                 }
                 catch
                 {
-                    MessageBox.Show("Es kann kein Snack entfernt werden dass es nicht gibt.");
+                    MessageBox.Show("Es kann kein Snack entfernt werden dass es nicht gibt.", "Nicht vorhanden", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
@@ -279,7 +279,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
 
                     var getraenk1 = obFac.welchesGetraenk(fuellmenge, alkohol, aktAnzahl.ToString(), getraenkeName, getraenkeArt, lagerort);
                         db.Getraenks.Add(getraenk1);
-                    MessageBox.Show("Das Getränk wurde hinzugefügt.");
+                    MessageBox.Show("Das Getränk wurde hinzugefügt.", "INFO", MessageBoxButton.OK, MessageBoxImage.Information);
                     db.SaveChanges();
 
                     }
@@ -300,7 +300,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
 
                     var getraenk = obFac.welchesGetraenk(fuellmenge, alkohol, anzahl, getraenkeName, getraenkeArt, lagerort);
                     db.Getraenks.Add(getraenk);
-                    MessageBox.Show("Das Getränk wurde hinzugefügt.");
+                    MessageBox.Show("Das Getränk wurde hinzugefügt.", "INFO", MessageBoxButton.OK, MessageBoxImage.Information);
                     db.SaveChanges();
                     }
 
@@ -342,7 +342,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     
 
                     db.Snackss.Add(snack1);
-                    MessageBox.Show("Der Snack wurde hinzugefügt.");
+                    MessageBox.Show("Der Snack wurde hinzugefügt.", "INFO", MessageBoxButton.OK, MessageBoxImage.Information);
                     db.SaveChanges();
 
                 }
@@ -364,7 +364,7 @@ namespace Lagerverwaltung_Bauhaus.Datenbank
                     var snack = obFac.welcherSnack(anzahl,  snackName,  istSalzig,  snackArt,  lagerort);
 
                     db.Snackss.Add(snack);
-                    MessageBox.Show("Der Snack wurde hinzugefügt.");
+                    MessageBox.Show("Der Snack wurde hinzugefügt.", "INFO", MessageBoxButton.OK, MessageBoxImage.Information);
                     db.SaveChanges();
                 }
             }

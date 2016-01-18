@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Lagerverwaltung_Bauhaus.Datenbank;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Lagerverwaltung_Bauhaus.Datenbank;
 
 namespace Lagerverwaltung_Bauhaus
 {
     /// <summary>
     /// Interaktionslogik für UserControl_TabRemove.xaml
+    /// Hier werden bestehende Getränke und Snacks vom User gewählt und
+    /// aus der DB entfernt.
     /// </summary>
     public partial class UserControl_TabRemove : UserControl
     {
@@ -35,20 +26,20 @@ namespace Lagerverwaltung_Bauhaus
             String tasteDelete = comboBox_Remove_taste.SelectionBoxItem as String;
 
             Abfragen loeschenSnacks = new Abfragen();
-            loeschenSnacks.snackAusDbLoeschen(snackAmountDelete, tasteDelete, saltyDelete, snackArtDelete, sStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
+            loeschenSnacks.snackAusDbLoeschen(snackAmountDelete, tasteDelete, saltyDelete, snackArtDelete, sStorageLoc);
         }
 
         private void button_Remove_Decrease_Drink_Click(object sender, RoutedEventArgs e)
         {
             String artDelete = comboBox_Remove_drinkArt.SelectionBoxItem as String;
-            String alcoholDelete = comboBox_Remove_alcohol.SelectionBoxItem as String;  //muss noch in bool gecastet werden
-            String bSizeDelete = comboBox_Remove_bottleSize.SelectionBoxItem as String; //muss noch in double gecastet werden
+            String alcoholDelete = comboBox_Remove_alcohol.SelectionBoxItem as String;  
+            String bSizeDelete = comboBox_Remove_bottleSize.SelectionBoxItem as String; 
             String brandDelete = comboBox_Remove_Brand.SelectionBoxItem as String;
-            String drinkAmountDelete = comboBox_Remove_drinkAmount.SelectionBoxItem as String; //muss noch in int gecastet werden
+            String drinkAmountDelete = comboBox_Remove_drinkAmount.SelectionBoxItem as String;
             String dStorageLoc = comboBox_Remove_drinkStorageLocation.SelectionBoxItem as String;
 
             Abfragen loeschenDrinks = new Abfragen();
-            loeschenDrinks.getraenkAusDbLoeschen(bSizeDelete, alcoholDelete, drinkAmountDelete, brandDelete, artDelete, dStorageLoc); // muss noch in die entfernen klasse , wenn das geht,ansonsten raus damit^^
+            loeschenDrinks.getraenkAusDbLoeschen(bSizeDelete, alcoholDelete, drinkAmountDelete, brandDelete, artDelete, dStorageLoc);
 
         }
 

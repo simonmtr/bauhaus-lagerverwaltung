@@ -71,9 +71,6 @@
     <Compile Include="GUI\UserControl_TabContent\UserControl_TabWelcome.xaml.cs">
       <DependentUpon>UserControl_TabWelcome.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GUI\UserControl_PopUp\UserControl_PopUp.xaml.cs">
-      <DependentUpon>UserControl_PopUp.xaml</DependentUpon>
-    </Compile>
     <Compile Include="GUI\UserControl_TabContent\UserControl_TabAdd.xaml.cs">
       <DependentUpon>UserControl_TabAdd.xaml</DependentUpon>
     </Compile>
@@ -124,10 +121,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GUI\UserControl_PopUp\UserControl_PopUp.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="GUI\UserControl_TabContent\UserControl_TabAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,12 +163,13 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Ressourcen\Bilder\Bauhaus_Willkommen.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressourcen\Bilder\Bauhaus.JPG" />
     <Resource Include="Ressourcen\Bilder\Bauhaus_herz.JPG" />
     <Resource Include="Ressourcen\Bilder\Bauhaus_Ohne.JPG" />
-    <Resource Include="Ressourcen\Bilder\Bauhaus_Wilkommen.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="AbgabeDokumente\Spezifikation\KomponentenDiagramm-WIF-Prog3-TeamLammbock.jpg" />

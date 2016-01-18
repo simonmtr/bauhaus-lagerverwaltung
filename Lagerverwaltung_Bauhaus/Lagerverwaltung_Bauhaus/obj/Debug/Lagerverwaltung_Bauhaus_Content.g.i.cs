@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datenbank/lagerverwaltung.mdf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("datenbank/lagerverwaltung_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("ressourcen/bilder/bauhaus_willkommen.jpg")]
 
 

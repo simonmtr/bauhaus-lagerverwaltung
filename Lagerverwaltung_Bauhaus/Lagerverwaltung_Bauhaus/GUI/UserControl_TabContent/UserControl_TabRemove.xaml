@@ -182,9 +182,6 @@
 
             <Button x:Name="button_Remove_Decrease_Snack" Content="Snacks Entfernen" Grid.Column="1" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" Click="button_Remove_Decrease_Snack_Click"/>
 
-            <!--
-                <Button x:Name="button_Remove_Decrease" Content="Entfernen" Grid.Column="1" Grid.Row="1" FontFamily="Tekton Pro" FontSize="20" Background="White" BorderBrush="#FFCC0001" Height="45" Width="180" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0" Click="button_Remove_Decrease_Click" />
-        -->
         </Grid>
 
     </Grid>

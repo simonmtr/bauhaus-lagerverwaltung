@@ -18,8 +18,6 @@
 
             <DataGrid x:Name="snacks_DataGrid" Background="White" BorderBrush="#FFCC0001" Margin="10,10,10,0" IsReadOnly="True">
 
-
-
             </DataGrid>
 
         </Grid>
