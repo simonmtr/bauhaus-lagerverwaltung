@@ -1,0 +1,11 @@
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\Lagerverwaltung_Testklassen.dll
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\Lagerverwaltung_Testklassen.pdb
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\Lagerverwaltung_Bauhaus.exe
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\EntityFramework.dll
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\Lagerverwaltung_Bauhaus.pdb
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\EntityFramework.xml
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\bin\Release\de\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\obj\Release\Lagerverwaltung_Testklassen.csprojResolveAssemblyReference.cache
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\obj\Release\Lagerverwaltung_Testklassen.dll
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Testklassen\obj\Release\Lagerverwaltung_Testklassen.pdb

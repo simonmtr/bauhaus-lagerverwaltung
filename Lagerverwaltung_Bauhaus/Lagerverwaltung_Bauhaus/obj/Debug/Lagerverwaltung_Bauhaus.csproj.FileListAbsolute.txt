@@ -299,3 +299,6 @@ D:\Documents\GIT\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lager
 C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe.config
 C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
 C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.pdb
+D:\Documents\GIT\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
+D:\Documents\GIT\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.pdb
+C:\Users\Tobias\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.csprojResolveAssemblyReference.cache

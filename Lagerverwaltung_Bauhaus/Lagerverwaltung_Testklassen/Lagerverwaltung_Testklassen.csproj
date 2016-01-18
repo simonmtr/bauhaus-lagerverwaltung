@@ -55,7 +55,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Simon\Desktop\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus.csproj">
+    <ProjectReference Include="..\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus.csproj">
       <Project>{1742ec24-3c76-42bc-a79b-714edef59166}</Project>
       <Name>Lagerverwaltung_Bauhaus</Name>
     </ProjectReference>

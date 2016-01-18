@@ -173,6 +173,12 @@
     <Resource Include="AbgabeDokumente\Spezifikation\KomponentenDiagramm-WIF-Prog3-TeamLammbock.jpg" />
     <Resource Include="AbgabeDokumente\Spezifikation\UML-WIF-Prog3-TeamLammbock.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AbgabeDokumente\Abgabe\Präsentation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AbgabeDokumente\Abgabe\InstallationsHinweise.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -112,7 +112,7 @@
 
             <Label x:Name="Label_Remove_storageLocation" Content="Lagerort" Grid.Column="1" Grid.Row="5" FontFamily="Tekton Pro" FontSize="20" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
             <ComboBox x:Name="comboBox_Remove_drinkStorageLocation" Grid.Column="1" Grid.Row="6" FontFamily="Tekton Pro" FontSize="25" BorderBrush="#FFCC0001">
-                <ComboBoxItem Content="Theke" HorizontalAlignment="Left" />
+                <ComboBoxItem Content="Kühlschrank" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Bar" HorizontalAlignment="Left" />
                 <ComboBoxItem Content="Lager" HorizontalAlignment="Left" IsSelected="True" />
             </ComboBox>
