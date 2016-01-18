@@ -112,7 +112,6 @@
     <Compile Include="Lagerhaltung\Produkte\Snacks\Snacks.cs" />
     <Compile Include="Lagerhaltung\Produkte\Snacks\süß\Gummibaeren.cs" />
     <Compile Include="Lagerhaltung\Produkte\Snacks\süß\Suesssnacks.cs" />
-    <Compile Include="Lagerhaltung\Snackbestand123.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -139,7 +138,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modell\BauhausApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -13,8 +13,6 @@ namespace Lagerverwaltung_Testklassen
         public void bierTest()
         {
             Bier bier = new Getraenk(0.5, true, 1,  "Augustiner", "Bier",  "Lager") as Bier;
-
-
             string getraenkart = bier.GetraenkeArt;
 
         }

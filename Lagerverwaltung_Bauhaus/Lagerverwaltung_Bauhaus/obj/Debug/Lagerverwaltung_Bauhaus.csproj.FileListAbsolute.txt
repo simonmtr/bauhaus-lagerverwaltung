@@ -296,3 +296,6 @@ C:\Users\Simon\Desktop\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverw
 C:\Users\Simon\Desktop\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\GUI\UserControl_TabContent\UserControl_TabSnacks.baml
 C:\Users\Simon\Desktop\Bauhaus_Lagerverwaltung\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.g.resources
 D:\Documents\GIT\Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe.config
+C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\bin\Debug\Lagerverwaltung_Bauhaus.exe.config
+C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.exe
+C:\Users\Simon\Desktop\1Lagerverwaltung_Bauhaus\Lagerverwaltung_Bauhaus\obj\Debug\Lagerverwaltung_Bauhaus.pdb
