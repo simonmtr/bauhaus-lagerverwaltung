@@ -1,0 +1,11 @@
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\obj\Debug\Lagerverwaltung_Testklassen.csprojResolveAssemblyReference.cache
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\Lagerverwaltung_Testklassen.dll
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\Lagerverwaltung_Testklassen.pdb
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\Lagerverwaltung_Bauhaus.exe
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\EntityFramework.dll
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\Lagerverwaltung_Bauhaus.pdb
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\EntityFramework.xml
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\bin\Debug\de\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\obj\Debug\Lagerverwaltung_Testklassen.dll
+B:\Dateien\Dropbox\Dropbox\Prog3Projekt\Lagerverwaltung_Testklassen\Lagerverwaltung_Testklassen\obj\Debug\Lagerverwaltung_Testklassen.pdb
